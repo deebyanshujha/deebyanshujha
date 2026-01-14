@@ -1,9 +1,5 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" 
-          srcset="https://raw.githubusercontent.com/deebyanshujha/deebyanshujha/main/output/pacman-contribution-graph-dark.svg">
-  <img alt="pacman contribution graph" 
-       src="https://raw.githubusercontent.com/deebyanshujha/deebyanshujha/main/output/pacman-contribution-graph.svg">
-</picture>
+![pacman](https://raw.githubusercontent.com/deebyanshujha/deebyanshujha/main/output/pacman-contribution-graph.svg)
+
 
 
 ###
