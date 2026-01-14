@@ -58,6 +58,21 @@
   </a>
 </div>
 
+
+## 📌 Most Active Repositories
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=deebyanshujha&theme=dracula&hide_border=false" />
+</p>
+
+
+## 🧠 Languages I Mostly Code In
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=deebyanshujha&layout=compact&langs_count=6&theme=dracula&hide_border=false" />
+</p>
+
+
 ###
 
 
