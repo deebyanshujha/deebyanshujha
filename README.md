@@ -62,7 +62,7 @@
 ## 📌 Most Active Repositories
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=deebyanshujha&show_icons=true&theme=dracula&hide_border=false&count_private=true" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=deebyanshujha&show_icons=true&theme=dracula" />
 </p>
 
 
@@ -70,7 +70,8 @@
 ## 🧠 Languages I Mostly Code In
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=deebyanshujha&layout=compact&langs_count=6&theme=dracula&hide_border=false&card_width=320" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=deebyanshujha&layout=compact&theme=dracula&langs_count=6" />
+
 </p>
 
 
