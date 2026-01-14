@@ -1,88 +1,88 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=300&section=header&text=Deebyanshu%20Jha&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=35&desc=⛏️%20Backend%20Explorer%20•%20Problem%20Solver%20•%20Builder%20🎯&descSize=20&descAlignY=55" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:3C873A,100:2E7031&height=120&section=header&text=Deebyanshu%20Jha&fontSize=40&fontColor=E6FFE6&fontAlign=50&fontAlignY=40&desc=Backend%20Explorer%20%7C%20Problem%20Solver%20%7C%20Builder&descAlign=50&descAlignY=70" />
 </p>
 
+
+###
+
+<p align="left">🔭 I’m currently working on<br>Building simple, real-world web projects and strengthening my backend fundamentals through hands-on practice.<br><br>👯 I’m looking to collaborate on<br>Beginner-friendly web development or problem-solving projects where clean logic and simplicity matter.<br><br>🤝 I’m looking for help with<br>Improving backend architecture, best practices, and writing more scalable code.<br><br>🌱 I’m currently learning<br>JavaScript in depth, backend development concepts, and improving my problem-solving skills through consistent coding.</p>
+
+###
+
 <div align="center">
-  
-  ### 🌳 Welcome to My Digital World 🌳
-```ascii
-  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
-  ⬛🟫🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟫🟫⬛
-  ⬛🟫🟩🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟫🟩🟫⬛
-  ⬛⬛🟫🟩🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟫🟩🟫⬛⬛
-  ⬛⬛⬛🟫🟩🟫⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟫🟩🟫⬛⬛⬛
-  ⬛⬛⬛⬛🟫🟩🟫⬛⬛⬛⬛⬛⬛⬛⬛🟫🟩🟫⬛⬛⬛⬛
-  ⬛⬛⬛⬛⬛🟫🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟫⬛⬛⬛⬛⬛
-  ⬛⬛⬛⬛⬛⬛🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫⬛⬛⬛⬛⬛⬛
-```
-  
-  **🏗️ Currently Building:** Clean backend systems & solving coding challenges  
-  **💎 Collecting Skills:** JavaScript • Backend • Problem Solving  
-  **🗺️ Quest:** Writing scalable code & mastering web development
-  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="40" alt="tailwindcss logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" alt="numpy logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="pandas logo"  />
 </div>
 
----
+###
 
 <div align="center">
-  
-  ### ⚒️ My Inventory ⚒️
-  
-  ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-  ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-  ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-  ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-  ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-  
+  <img height="200" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjJxbXptZmoyeHI0aGR5YXRpdXM3NnkxZWJ0ODdnaGZpYTIwYnAyciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.gif"  />
 </div>
 
----
+###
 
 <div align="center">
-  
-  ### 📊 XP & Stats 📊
-  
-  <img src="https://github-readme-stats.vercel.app/api?username=deebyanshujha&show_icons=true&theme=minecraft&hide_border=true&bg_color=0D1117&title_color=77DD77&icon_color=FFD700&text_color=C9D1D9" />
-  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=deebyanshujha&theme=dark&hide_border=true&background=0D1117&stroke=77DD77&ring=FFD700&fire=FF4500&currStreakLabel=77DD77" />
-  
+  <a href="https://www.linkedin.com/in/deebyanshujha/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
+  </a>
+  <a href="https://www.hackerrank.com/profile/jhadeebyanshu" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/hackerrank/default.svg" width="52" height="40" alt="hackerrank logo"  />
+  </a>
+  <a href="jhadeebyanshu@gmail.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
+  </a>
+  <a href="https://www.instagram.com/_deebyanshu_/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
+  </a>
 </div>
 
----
+###
+
+
+![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&theme=react-dark&area=true)
+
+
+###
 
 <div align="center">
-  
-  ### 🎯 Active Quests 🎯
-  
-  🔭 **Main Quest:** Building real-world projects & backend fundamentals  
-  👯 **Co-op Mode:** Open to beginner-friendly web dev collaborations  
-  🤝 **Need Help With:** Backend architecture & scalable code patterns  
-  🌱 **Skill Tree:** Leveling up JavaScript & problem-solving daily
-  
+  <a href="https://open.spotify.com/user/31cjscaovhwl7ev5mo7ogfrdbl7q">
+    <img src="https://spotify-recently-played-readme.vercel.app/api?user=31cjscaovhwl7ev5mo7ogfrdbl7q&count=2&unique=false" alt="Spotify recently played" />
+  </a>
 </div>
 
----
+
+###
 
 <div align="center">
-  
-  ### 🔗 Connect & Trade 🔗
-  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deebyanshujha/)
-  [![HackerRank](https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://www.hackerrank.com/profile/jhadeebyanshu)
-  [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jhadeebyanshu@gmail.com)
-  [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_deebyanshu_/)
-  
+  <img src="https://count.getloli.com/@:deebyanshujha?theme=minecraft&padding=1&scale=1&align=top&pixelated=1&darkmode=auto"  />
 </div>
 
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=120&section=footer&text=⭐%20Keep%20Mining,%20Keep%20Building%20⛏️&fontSize=25&fontColor=fff&animation=fadeIn" />
-</p>
+###
 
 <div align="center">
-  
-  ![Visitor Count](https://count.getloli.com/@:deebyanshujha?theme=minecraft&padding=7&scale=2&align=top&pixelated=1&darkmode=auto)
+  <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&desc=%E2%AD%90%20Always%20learning,%20building,%20and%20improving%20%E2%80%94%20one%20commit%20at%20a%20time.&descAlign=50&descAlignY=50&theme=cobalt"  />
+</div>
+
+###
