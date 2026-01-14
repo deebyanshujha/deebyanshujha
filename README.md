@@ -1,4 +1,5 @@
-![pacman](https://raw.githubusercontent.com/deebyanshujha/deebyanshujha/main/output/pacman-contribution-graph.svg)
+![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&theme=react-dark&area=true)
+
 
 
 
