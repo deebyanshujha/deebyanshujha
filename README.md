@@ -1,4 +1,7 @@
-![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&theme=react-dark&area=true)
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Backend-focused+CS+Student;Problem+Solver+%7C+Clean+Logic;Learning+by+Building+Every+Day" />
+</p>
+
 
 
 
@@ -60,10 +63,9 @@
 
 ###
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=deebyanshujha&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
-</div>
+
+![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&theme=react-dark&area=true)
+
 
 ###
 
