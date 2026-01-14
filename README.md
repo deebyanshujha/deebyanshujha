@@ -1,9 +1,6 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Backend-focused+CS+Student;Problem+Solver+%7C+Clean+Logic;Learning+by+Building+Every+Day" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:3C873A,100:2E7031&height=120&section=header&text=Deebyanshu%20Jha&fontSize=40&fontColor=E6FFE6&fontAlign=50&fontAlignY=40&desc=Backend%20Explorer%20%7C%20Problem%20Solver%20%7C%20Builder&descAlign=50&descAlignY=70" />
 </p>
-
-
-
 
 
 ###
