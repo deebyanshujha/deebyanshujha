@@ -70,7 +70,7 @@
 ## 🧠 Languages I Mostly Code In
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=deebyanshujha&layout=compact&theme=dracula&langs_count=6" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=deebyanshujha&layout=compact&theme=dark&langs_count=6" />
 
 </p>
 
