@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=300&section=header&text=Deebyanshu%20Jha&fontSize=70&fontColor=fff&animation=twinkling&fontAlignY=35&desc=💻%20Code%20is%20like%20humor.%20When%20you%20have%20to%20explain%20it,%20it's%20bad.%20⚡&descSize=18&descAlignY=55" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=300&section=header&text=Deebyanshu%20Jha&fontSize=70&fontColor=fff&fontAlignY=35&desc=Focused%20on%20fundamentals.%20Built%20through%20consistency.&descSize=18&descAlignY=55" />
 </p>
 
 
@@ -67,7 +67,7 @@
 </div>
 
 
-## 🧠 Languages I Mostly Code In
+## 🧠 Languages I Regularly Use
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=deebyanshujha&layout=compact&theme=dark&langs_count=6" />
