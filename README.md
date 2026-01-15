@@ -56,6 +56,14 @@
   <a href="https://www.instagram.com/_deebyanshu_/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
   </a>
+  <a href="https://leetcode.com/u/deebyanshujha/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/leetcode/leetcode-original.svg"
+         width="52" height="40" alt="LeetCode profile" />
+  </a>
+  <a href="https://codolio.com/profile/deebyanshujha" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-original.svg"
+         width="52" height="40" alt="Codolio profile" />
+  </a>
 </div>
 
 
