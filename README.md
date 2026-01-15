@@ -67,14 +67,6 @@
 </div>
 
 
-## 📌 Most Active Repositories
-
-<p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=deebyanshujha&show_icons=true&theme=dracula" />
-</p>
-
-
-
 ## 🧠 Languages I Mostly Code In
 
 <p align="center">
