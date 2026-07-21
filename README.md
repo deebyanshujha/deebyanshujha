@@ -1,96 +1,142 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=300&section=header&text=Deebyanshu%20Jha&fontSize=70&fontColor=fff&fontAlignY=35&desc=Focused%20on%20fundamentals.%20Built%20through%20consistency.&descSize=18&descAlignY=55" />
+  <img src="./assets/first-principles-hero.svg" alt="A systems themed GitHub profile hero for Deebyanshu Jha" width="100%" />
 </p>
 
-
-###
-
-<p align="left">🔭 I’m currently working on<br>Building simple, real-world web projects and strengthening my backend fundamentals through hands-on practice.<br><br>👯 I’m looking to collaborate on<br>Beginner-friendly web development or problem-solving projects where clean logic and simplicity matter.<br><br>🤝 I’m looking for help with<br>Improving backend architecture, best practices, and writing more scalable code.<br><br>🌱 I’m currently learning<br>JavaScript in depth, backend development concepts, and improving my problem-solving skills through consistent coding.</p>
-
-###
-
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="40" alt="tailwindcss logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" alt="numpy logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="pandas logo"  />
-</div>
-
-###
-
-<div align="center">
-  <img height="200" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjJxbXptZmoyeHI0aGR5YXRpdXM3NnkxZWJ0ODdnaGZpYTIwYnAyciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.gif"  />
-</div>
-
-###
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/deebyanshujha/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.hackerrank.com/profile/jhadeebyanshu" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/hackerrank/default.svg" width="52" height="40" alt="hackerrank logo"  />
-  </a>
-  <a href="jhadeebyanshu@gmail.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
-  </a>
-  <a href="https://www.instagram.com/_deebyanshu_/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://leetcode.com/u/deebyanshujha/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/leetcode/leetcode-original.svg"
-         width="52" height="40" alt="LeetCode profile" />
-  </a>
-  <a href="https://codolio.com/profile/deebyanshujha" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-original.svg"
-         width="52" height="40" alt="Codolio profile" />
-  </a>
-</div>
-
-
-## 🧠 Languages I Regularly Use
+<h3 align="center">I enjoy understanding the layers beneath the software I build.</h3>
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=deebyanshujha&layout=compact&theme=dark&langs_count=6" />
-
+  <code>CS Student</code>
+  &nbsp;|&nbsp;
+  <code>700+ DSA Problems</code>
+  &nbsp;|&nbsp;
+  <code>Lamb Interpreter</code>
+  &nbsp;|&nbsp;
+  <code>xv6</code>
+  &nbsp;|&nbsp;
+  <code>TCP Servers</code>
 </p>
 
+---
 
+## ./intro
 
-###
+I am a Computer Science student who likes building things that make computers feel less like black boxes.
 
+My story is not about collecting frameworks. It is about asking what happens underneath: how source code becomes behavior, how a server handles connections, how memory and processes are managed, and how small design choices turn into system architecture.
 
-![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&theme=react-dark&area=true)
+I have solved 700+ DSA problems because I believe clear thinking and strong problem solving come before fancy technologies.
 
-###
+```txt
+source code   -> tokens -> grammar -> AST -> runtime
+packet stream -> socket -> protocol -> state -> response
+program       -> syscall -> kernel -> scheduler -> hardware
+```
 
-<div align="center">
-  <img src="https://count.getloli.com/@:deebyanshujha?theme=minecraft&padding=1&scale=1&align=top&pixelated=1&darkmode=auto"  />
-</div>
+## ./currently-exploring
 
-###
+<table>
+  <tr>
+    <td width="25%"><strong>Operating Systems</strong><br><sub>xv6, processes, traps, syscalls, scheduling</sub></td>
+    <td width="25%"><strong>Networking</strong><br><sub>TCP, sockets, server state, message flow</sub></td>
+    <td width="25%"><strong>Language Design</strong><br><sub>parsing, scope, closures, runtime environments</sub></td>
+    <td width="25%"><strong>Architecture</strong><br><sub>interfaces, boundaries, maintainability</sub></td>
+  </tr>
+</table>
 
-<div align="center">
-  <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&desc=%E2%AD%90%20Always%20learning,%20building,%20and%20improving%20%E2%80%94%20one%20commit%20at%20a%20time.&descAlign=50&descAlignY=50&theme=cobalt"  />
-</div>
+## ./systems-map
 
-###
+<p align="center">
+  <img src="./assets/systems-map.svg" alt="A layered systems map showing how Deebyanshu studies software from application behavior down to kernels and hardware" width="100%" />
+</p>
+
+## ./things-built
+
+### Lamb
+
+An interpreted programming language written in Java.
+
+<p align="center">
+  <img src="./assets/lamb-pipeline.svg" alt="Lamb interpreter pipeline showing lexer, parser, AST, resolver, and runtime" width="100%" />
+</p>
+
+Building Lamb helped me understand how a language is shaped from the inside:
+
+- Lexer
+- Recursive descent parser
+- AST generation
+- Visitor pattern
+- Resolver
+- Functions and closures
+- Classes and inheritance
+- Runtime environment
+
+### TCP Chat Server
+
+A networking project focused on how clients communicate over TCP, how messages move through sockets, and how server-side state is managed across connections.
+
+### Problem Solving
+
+700+ DSA problems solved as deliberate practice in reasoning, pattern recognition, and implementation discipline. For me, DSA is not about streaks; it is practice for thinking clearly under constraints.
+
+## ./learning-now
+
+```txt
+xv6              kernel structure, traps, syscalls, scheduler behavior
+networking       TCP/IP, socket programming, client-server communication
+interpreters     parsing, resolving names, closures, object models
+backend systems  clean interfaces, state flow, long-term maintainability
+```
+
+I do not want to become someone who only knows frameworks. I want to understand why things work internally.
+
+## ./technologies
+
+I try to keep tools in their place: useful, but secondary to understanding the system.
+
+<p>
+  <img src="https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=F97316" alt="Java" />
+  <img src="https://img.shields.io/badge/C%2B%2B-0D1117?style=for-the-badge&logo=cplusplus&logoColor=6295CB" alt="C++" />
+  <img src="https://img.shields.io/badge/C-0D1117?style=for-the-badge&logo=c&logoColor=A8B9CC" alt="C" />
+  <img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python" />
+  <img src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
+  <img src="https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux" />
+  <img src="https://img.shields.io/badge/VS_Code-0D1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC" alt="VS Code" />
+</p>
+
+<table>
+  <tr>
+    <td><code>core</code></td>
+    <td>Data structures, algorithms, operating systems, networking, compilers</td>
+  </tr>
+  <tr>
+    <td><code>backend</code></td>
+    <td>APIs, server-side logic, state management, architecture boundaries</td>
+  </tr>
+  <tr>
+    <td><code>web basics</code></td>
+    <td>HTML, CSS, JavaScript</td>
+  </tr>
+</table>
+
+## ./debug-break
+
+<p align="center">
+  <img height="220" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjJxbXptZmoyeHI0aGR5YXRpdXM3NnkxZWJ0ODdnaGZpYTIwYnAyciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.gif" alt="Coding meme break" />
+</p>
+
+## ./contact
+
+<p>
+  <a href="https://www.linkedin.com/in/deebyanshujha/"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=79C0FF" alt="LinkedIn" /></a>
+  <a href="mailto:jhadeebyanshu@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
+  <a href="https://leetcode.com/u/deebyanshujha/"><img src="https://img.shields.io/badge/LeetCode-0D1117?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode" /></a>
+  <a href="https://www.hackerrank.com/profile/jhadeebyanshu"><img src="https://img.shields.io/badge/HackerRank-0D1117?style=for-the-badge&logo=hackerrank&logoColor=00EA64" alt="HackerRank" /></a>
+  <a href="https://codolio.com/profile/deebyanshujha"><img src="https://img.shields.io/badge/Codolio-0D1117?style=for-the-badge&logo=codeforces&logoColor=F2CC60" alt="Codolio" /></a>
+</p>
+
+---
+
+<p align="center">
+  <sub>Still learning, still building, and still trying to understand one layer deeper.</sub>
+</p>
