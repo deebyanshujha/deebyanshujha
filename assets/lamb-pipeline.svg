@@ -80,10 +80,10 @@
     <circle cx="960" cy="174" r="5" fill="#A371F7"/>
   </g>
 
-  <text class="mono muted" x="66" y="239" font-size="13">closures</text>
-  <text class="mono muted" x="198" y="239" font-size="13">functions</text>
-  <text class="mono muted" x="342" y="239" font-size="13">visitor pattern</text>
-  <text class="mono muted" x="544" y="239" font-size="13">classes</text>
-  <text class="mono muted" x="680" y="239" font-size="13">inheritance</text>
-  <text class="mono muted" x="846" y="239" font-size="13">environment</text>
+  <text class="mono muted" x="120" y="239" font-size="13" text-anchor="middle">closures</text>
+  <text class="mono muted" x="288" y="239" font-size="13" text-anchor="middle">functions</text>
+  <text class="mono muted" x="456" y="239" font-size="13" text-anchor="middle">visitor pattern</text>
+  <text class="mono muted" x="624" y="239" font-size="13" text-anchor="middle">classes</text>
+  <text class="mono muted" x="792" y="239" font-size="13" text-anchor="middle">inheritance</text>
+  <text class="mono muted" x="960" y="239" font-size="13" text-anchor="middle">environment</text>
 </svg>
