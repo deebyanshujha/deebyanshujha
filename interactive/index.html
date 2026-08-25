@@ -1,0 +1,796 @@
+<title>Specimen DJ-0001</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Deebyanshu Jha, rendered as a living digital organism.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap">
+<style>
+  :root {
+    --bg: #03050a;
+    --ink: #7e93a0;
+    --ink-b: #d8eef3;
+    --cy: #7fe9e0;
+    --line: #1d3138;
+    --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; background: var(--bg); overflow: hidden; }
+  body { font-family: var(--mono); font-weight: 400; color: var(--ink); -webkit-font-smoothing: antialiased; }
+  canvas { display: block; width: 100vw; height: 100vh; cursor: crosshair; touch-action: none; }
+  canvas.on-node { cursor: pointer; }
+
+  /* the organism revealing information about itself — never a card */
+  #probe {
+    position: fixed; pointer-events: none; opacity: 0;
+    transform: translateY(6px);
+    transition: opacity .22s ease, transform .22s ease;
+    max-width: min(340px, 74vw);
+    padding-left: 13px;
+    border-left: 1px solid currentColor;
+    z-index: 5;
+  }
+  #probe.live { opacity: 1; transform: translateY(0); }
+  #probe .nm { font-size: 13px; letter-spacing: 3.2px; color: var(--ink-b); }
+  #probe .tc { font-size: 9.5px; letter-spacing: 2px; margin-top: 6px; opacity: .8; }
+  #probe .st { font-size: 8.5px; letter-spacing: 3px; margin-top: 4px; }
+  #probe .ds { font-size: 10.5px; letter-spacing: .4px; line-height: 1.65; margin-top: 9px; color: #8fa7b3; }
+  #probe .lk { font-size: 8.5px; letter-spacing: 2.4px; margin-top: 9px; opacity: .62; }
+
+  #banner {
+    position: fixed; inset: auto 0 auto 0; top: 46%;
+    text-align: center; pointer-events: none; z-index: 6;
+    opacity: 0; transition: opacity .5s ease;
+  }
+  #banner.live { opacity: 1; }
+  #banner b { display: block; font-weight: 400; font-size: clamp(15px, 3.4vw, 30px); letter-spacing: clamp(6px, 1.6vw, 18px); color: var(--ink-b); }
+  #banner s { display: block; text-decoration: none; font-size: 9px; letter-spacing: 5px; margin-top: 12px; color: var(--cy); opacity: .75; }
+
+  #hint {
+    position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%);
+    font-size: 8px; letter-spacing: 3.4px; color: #33454d; z-index: 4;
+    text-align: center; pointer-events: none; padding: 0 12px;
+  }
+  #back {
+    position: fixed; right: 16px; bottom: 14px; z-index: 7;
+    font-size: 8px; letter-spacing: 3px; color: #3d525b; text-decoration: none;
+  }
+  #back:hover { color: var(--cy); }
+  @media (prefers-reduced-motion: reduce) { #probe { transition: none; } }
+</style>
+
+<canvas id="c"></canvas>
+<div id="probe"></div>
+<div id="banner"><b></b><s></s></div>
+<div id="hint">MOVE OVER THE ORGANELLES &nbsp;·&nbsp; TOUCH THE CORE &nbsp;·&nbsp; SOMETHING ELSE IS HIDDEN IN HERE</div>
+<a id="back" href="https://github.com/deebyanshujha">← GITHUB</a>
+
+<script>
+/* =====================================================================
+   SPECIMEN DJ-0001 — live culture
+   The static SVG in the README is a photograph of this. This is the thing
+   itself: the same genome, grown in a canvas, with a nervous system that
+   reacts to being looked at.
+   ===================================================================== */
+
+const GENOME = {
+  specimen: {
+    id: 'DJ-0001', designation: 'DEEBYANSHU JHA',
+    classification: 'COMPUTER SCIENCE STUDENT / BUILDER',
+    substrate: 'SYSTEMS + WEB + AI', habitat: 'VELLORE, TN, IN',
+    germination: '2024-09-25',
+  },
+  branches: [
+    { id:'build',       label:'BUILD',       angle:158, reach:0.98, hue:'#F2CC60', note:'things made from scratch' },
+    { id:'systems',     label:'SYSTEMS',     angle:206, reach:0.96, hue:'#56D4DD', note:'kernels, sockets, memory' },
+    { id:'projects',    label:'PROJECTS',    angle:336, reach:1.00, hue:'#79C0FF', note:'shipped organisms' },
+    { id:'experiments', label:'EXPERIMENTS', angle:30,  reach:0.96, hue:'#7EE787', note:'unstable cultures' },
+    { id:'learning',    label:'LEARNING',    angle:284, reach:0.90, hue:'#B0A9F5', note:'active growth zone' },
+    { id:'future',      label:'FUTURE',      angle:104, reach:0.86, hue:'#9FB6C9', note:'undifferentiated tissue' },
+  ],
+  nodes: [
+    { branch:'build', t:0.50, side:1, spread:80, size:20, name:'LAMB', tech:'JAVA / JVM / TREE-WALK', status:'SHIPPED',
+      desc:'An interpreted language built end to end: lexer, recursive-descent parser, AST, resolver, closures, classes, inheritance.',
+      url:'https://github.com/deebyanshujha/Lamb' },
+    { branch:'build', t:0.86, side:-1, spread:64, size:12, name:'DOCS-LAMB', tech:'HTML / DOCS', status:'LIVE',
+      desc:'Documentation for the Lamb language. A language nobody can read is not finished.',
+      url:'https://github.com/deebyanshujha/docs-lamb' },
+    { branch:'systems', t:0.50, side:-1, spread:70, size:18, name:'CHATTERNET', tech:'C++ / SOCKETS / THREADS', status:'SHIPPED',
+      desc:'Multi-threaded TCP group chat. Concurrent clients, server-side state, real-time broadcast.',
+      url:'https://github.com/deebyanshujha/ChatterNet' },
+    { branch:'systems', t:0.80, side:1, spread:66, size:15, name:'WINSOCK ECHO', tech:'C++ / WINSOCK / TCP-IP', status:'SHIPPED',
+      desc:'bind, listen, accept, send, recv. TCP learned from the bottom up rather than from a framework.',
+      url:'https://github.com/deebyanshujha/WinSock-Echo-Server' },
+    { branch:'systems', t:0.30, side:1, spread:60, size:13, name:'XV6', tech:'C / UNIX / KERNEL', status:'IN VIVO',
+      desc:'Traps, syscalls, processes, scheduler behaviour — read from the source, not from slides.', url:'' },
+    { branch:'projects', t:0.40, side:-1, spread:96, size:19, name:'MY_PORTFOLIO', tech:'TYPESCRIPT / REACT', status:'EVOLVING',
+      desc:'The current personal surface. Still being reshaped.',
+      url:'https://github.com/deebyanshujha/my_portfolio' },
+    { branch:'projects', t:0.70, side:1, spread:84, size:16, name:'PROJECT CAMP', tech:'NODE / REST / AUTH-RBAC', status:'SHIPPED',
+      desc:'Collaborative project management backend: projects, tasks, subtasks, notes, role-based access control.',
+      url:'https://github.com/deebyanshujha/Project_camp' },
+    { branch:'projects', t:0.92, side:-1, spread:66, size:14, name:'HOSTELFIX', tech:'JAVASCRIPT / DASHBOARD', status:'SHIPPED',
+      desc:'Hostel maintenance platform. Complaint intake with images, triage, staff assignment, resolution tracking.',
+      url:'https://github.com/deebyanshujha/hostelfix_vitv' },
+    { branch:'projects', t:0.56, side:1, spread:52, size:11, name:'RAPID RECALL', tech:'JAVASCRIPT / DOM', status:'SHIPPED',
+      desc:'Multiplayer category recall game. Turn order, duplicate prevention, live scoring, timers.',
+      url:'https://github.com/deebyanshujha/rapid-recall' },
+    { branch:'experiments', t:0.58, side:1, spread:86, size:17, name:'PLACEMENT PREDICTOR', tech:'PYTHON / JUPYTER / ML', status:'CULTURED',
+      desc:'Will you get placed? A small supervised model trained on placement outcomes.',
+      url:'https://github.com/deebyanshujha/placement_predictor' },
+    { branch:'experiments', t:0.86, side:-1, spread:70, size:15, name:'ON_CLOUD_9', tech:'PYTHON', status:'MUTATING',
+      desc:'An active culture. Shape not yet fixed.',
+      url:'https://github.com/deebyanshujha/On_Cloud_9' },
+    { branch:'experiments', t:0.30, side:-1, spread:58, size:11, name:'MOVIE RECOMMENDER', tech:'JAVASCRIPT / OMDB API', status:'SHIPPED',
+      desc:'A Chrome extension that hands you a different film on every popup.',
+      url:'https://github.com/deebyanshujha/chrome-extension---movie-recommendation' },
+    { branch:'learning', t:0.50, side:1, spread:72, size:18, name:'700+ PROBLEMS', tech:'C++ / DSA / NEETCODE', status:'ONGOING',
+      desc:'Not a streak. Practice for thinking clearly under constraints.',
+      url:'https://github.com/deebyanshujha/neetcode-submissions' },
+    { branch:'learning', t:0.88, side:1, spread:62, size:12, name:'OS INTERNALS', tech:'C / XV6 / LINUX', status:'ABSORBING',
+      desc:'program → syscall → kernel → scheduler → hardware.', url:'' },
+    { branch:'future', t:0.58, side:1, spread:66, size:12, name:'COMPILERS', tech:'BYTECODE / VM / OPT', status:'UNFORMED',
+      desc:'The next step after Lamb: stop walking the tree, emit bytecode, build the machine that runs it.', url:'' },
+    { branch:'future', t:0.92, side:-1, spread:58, size:11, name:'DISTRIBUTED', tech:'CONSENSUS / RPC', status:'UNFORMED',
+      desc:'Because one server is never the interesting case.', url:'' },
+  ],
+  skills: [
+    { branch:'build', t:0.28, side:-1, d:46, form:'hex', label:'JAVA' },
+    { branch:'build', t:0.66, side:1, d:38, form:'spiral', label:'PARSERS' },
+    { branch:'build', t:0.96, side:1, d:38, form:'rod', label:'AST' },
+    { branch:'systems', t:0.24, side:-1, d:42, form:'hex', label:'C' },
+    { branch:'systems', t:0.62, side:1, d:40, form:'hex', label:'C++' },
+    { branch:'systems', t:0.92, side:-1, d:36, form:'rod', label:'LINUX' },
+    { branch:'systems', t:0.44, side:-1, d:34, form:'cluster', label:'SOCKETS' },
+    { branch:'projects', t:0.22, side:1, d:48, form:'hex', label:'TYPESCRIPT' },
+    { branch:'projects', t:0.55, side:-1, d:36, form:'hex', label:'JAVASCRIPT' },
+    { branch:'projects', t:0.82, side:1, d:38, form:'spiral', label:'REACT' },
+    { branch:'projects', t:0.98, side:1, d:40, form:'rod', label:'NODE' },
+    { branch:'experiments', t:0.26, side:1, d:42, form:'hex', label:'PYTHON' },
+    { branch:'experiments', t:0.44, side:1, d:44, form:'cluster', label:'AI / ML' },
+    { branch:'experiments', t:0.90, side:-1, d:32, form:'spiral', label:'APIS' },
+    { branch:'learning', t:0.30, side:1, d:40, form:'cluster', label:'DSA' },
+    { branch:'learning', t:0.72, side:-1, d:34, form:'rod', label:'GIT' },
+    { branch:'future', t:0.30, side:-1, d:44, form:'spiral', label:'ARCHITECTURE' },
+    { branch:'future', t:0.74, side:1, d:36, form:'cluster', label:'NETWORKS' },
+  ],
+};
+
+/* ---------- world ---------- */
+const W = 1680, H = 940, CX = 840, CY = 470, RX = 690, RY = 378;
+const cvs = document.getElementById('c');
+const ctx = cvs.getContext('2d', { alpha: false });
+const probeEl = document.getElementById('probe');
+const bannerEl = document.getElementById('banner');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+let view = { s: 1, ox: 0, oy: 0 };
+function resize() {
+  const dpr = Math.min(devicePixelRatio || 1, 2);
+  const w = innerWidth, h = innerHeight;
+  cvs.width = Math.round(w * dpr); cvs.height = Math.round(h * dpr);
+  // contain, but lean toward filling: the organism should own the field
+  const s = Math.max(Math.min(w / W, h / H), Math.min(w / W, h / H));
+  view.s = s;
+  view.ox = (w - W * s) / 2;
+  view.oy = (h - H * s) / 2;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+addEventListener('resize', resize);
+
+const toWorld = (px, py) => ({ x: (px - view.ox) / view.s, y: (py - view.oy) / view.s });
+const toScreen = (x, y) => ({ x: x * view.s + view.ox, y: y * view.s + view.oy });
+
+/* ---------- deterministic noise ---------- */
+function mulberry32(a) {
+  return function () {
+    a |= 0; a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/* ---------- growth ---------- */
+let limbs = [], dends = [], nodes = [], skills = [], particles = [], motes = [], chromatin = [];
+let seed = 0x5eed17;
+let hueShift = 0;
+
+const lerp = (a, b, t) => a + (b - a) * t;
+function along(pts, t) {
+  t = Math.max(0, Math.min(1, t));
+  const f = t * (pts.length - 1);
+  const i = Math.min(pts.length - 2, Math.floor(f));
+  const k = f - i, a = pts[i], b = pts[i + 1];
+  return { x: lerp(a.x, b.x, k), y: lerp(a.y, b.y, k), ang: Math.atan2(b.y - a.y, b.x - a.x) };
+}
+
+function shiftHue(hex, deg) {
+  if (!deg) return hex;
+  const n = parseInt(hex.slice(1), 16);
+  let r = (n >> 16) / 255, g = ((n >> 8) & 255) / 255, b = (n & 255) / 255;
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn;
+  let h = 0; const l = (mx + mn) / 2;
+  const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+  if (d) {
+    h = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
+    h *= 60; if (h < 0) h += 360;
+  }
+  h = (h + deg) % 360;
+  const c = (1 - Math.abs(2 * l - 1)) * s, x = c * (1 - Math.abs(((h / 60) % 2) - 1)), m = l - c / 2;
+  let rr, gg, bb;
+  if (h < 60) [rr, gg, bb] = [c, x, 0]; else if (h < 120) [rr, gg, bb] = [x, c, 0];
+  else if (h < 180) [rr, gg, bb] = [0, c, x]; else if (h < 240) [rr, gg, bb] = [0, x, c];
+  else if (h < 300) [rr, gg, bb] = [x, 0, c]; else [rr, gg, bb] = [c, 0, x];
+  const f = (v) => Math.round((v + m) * 255).toString(16).padStart(2, '0');
+  return '#' + f(rr) + f(gg) + f(bb);
+}
+const rgba = (hex, a) => {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`;
+};
+
+function grow() {
+  const rnd = mulberry32(seed);
+  const rr2 = (a, b) => a + (b - a) * rnd();
+  limbs = []; dends = []; nodes = []; skills = []; particles = []; motes = []; chromatin = [];
+
+  for (const b of GENOME.branches) {
+    const a = (b.angle * Math.PI) / 180;
+    const dir = { x: Math.cos(a), y: -Math.sin(a) };
+    const perp = { x: -dir.y, y: dir.x };
+    const curl = rr2(-1, 1) * 58, wob = rr2(30, 52);
+    const pts = [];
+    for (let i = 0; i <= 46; i++) {
+      const t = i / 46;
+      const rad = 0.115 + t * (b.reach - 0.115);
+      const swell = Math.sin(t * Math.PI);
+      const off = swell * Math.sin(t * 5.3 + b.angle) * wob + curl * Math.pow(t, 1.7);
+      pts.push({ x: CX + dir.x * RX * rad + perp.x * off, y: CY + dir.y * RY * rad + perp.y * off });
+    }
+    const limb = { ...b, hue: shiftHue(b.hue, hueShift), pts, act: 0 };
+    limbs.push(limb);
+
+    for (const s of [0.3, 0.44, 0.58, 0.7, 0.81, 0.9]) {
+      for (const sgn of [1, -1]) {
+        if (rnd() > 0.72) continue;
+        const base = along(pts, s);
+        const ang = base.ang + ((rr2(24, 62) * Math.PI) / 180) * sgn;
+        const len = rr2(46, 128) * (1.12 - s);
+        const dp = [];
+        for (let k = 0; k <= 14; k++) {
+          const t = k / 14, drift = Math.sin(t * 3.1 + s * 9) * len * 0.22;
+          dp.push({
+            x: base.x + Math.cos(ang) * len * t - Math.sin(ang) * drift,
+            y: base.y + Math.sin(ang) * len * t + Math.cos(ang) * drift,
+          });
+        }
+        dends.push({ pts: dp, hue: limb.hue, w: rr2(0.8, 2.0), limb, flashAt: rnd() * 20, flash: 0 });
+        if (rnd() > 0.45) {
+          const tb = along(dp, rr2(0.55, 0.9));
+          const ta = tb.ang + ((rr2(20, 55) * Math.PI) / 180) * (rnd() > 0.5 ? 1 : -1);
+          const tl = rr2(22, 58), tp = [];
+          for (let k = 0; k <= 8; k++) {
+            const t = k / 8;
+            tp.push({ x: tb.x + Math.cos(ta) * tl * t + Math.sin(ta) * Math.sin(t * 3) * 7,
+                      y: tb.y + Math.sin(ta) * tl * t - Math.cos(ta) * Math.sin(t * 3) * 7 });
+          }
+          dends.push({ pts: tp, hue: limb.hue, w: rr2(0.5, 1.1), limb, flashAt: rnd() * 20, flash: 0 });
+        }
+      }
+    }
+  }
+
+  const byId = Object.fromEntries(limbs.map((l) => [l.id, l]));
+
+  for (const n of GENOME.nodes) {
+    const limb = byId[n.branch];
+    const p = along(limb.pts, n.t);
+    const nx = -Math.sin(p.ang) * n.side, ny = Math.cos(p.ang) * n.side;
+    nodes.push({
+      ...n, limb, hue: limb.hue, hx: p.x, hy: p.y,
+      x: p.x + nx * n.spread, y: p.y + ny * n.spread,
+      act: 0, phase: rnd() * 9, spin: rr2(-0.35, 0.35),
+      sats: Array.from({ length: 5 + ((rnd() * 5) | 0) }, () => ({ a: rnd() * 6.283, d: rr2(1.25, 1.75), r: rr2(0.8, 2.1), sp: rr2(-0.5, 0.5) })),
+      tilt: rr2(-0.7, 0.7),
+    });
+  }
+
+  for (const s of GENOME.skills) {
+    const limb = byId[s.branch];
+    const p = along(limb.pts, s.t);
+    const nx = -Math.sin(p.ang) * s.side, ny = Math.cos(p.ang) * s.side;
+    skills.push({ ...s, limb, hue: limb.hue, hx: p.x, hy: p.y, x: p.x + nx * s.d, y: p.y + ny * s.d,
+                  phase: rnd() * 9, rot: rnd() * 6.283, act: 0,
+                  dots: Array.from({ length: 7 }, () => ({ a: rnd() * 6.283, d: rnd() * 9.5, r: 1.1 + rnd() * 1.8 })) });
+  }
+
+  // impulses: weighted so trunks carry more traffic than twigs
+  const rails = [];
+  for (const l of limbs) for (let i = 0; i < 5; i++) rails.push({ pts: l.pts, hue: l.hue, limb: l, trunk: true });
+  for (const d of dends) rails.push({ pts: d.pts, hue: d.hue, limb: d.limb, trunk: false });
+  for (const n of nodes) rails.push({ pts: [{ x: n.hx, y: n.hy }, { x: n.x, y: n.y }], hue: n.hue, limb: n.limb, node: n, trunk: false });
+  for (let i = 0; i < 260; i++) {
+    const r = rails[i % rails.length];
+    particles.push({
+      rail: r, t: rnd(), dir: rnd() > 0.74 ? -1 : 1,
+      sp: (r.trunk ? rr2(0.055, 0.1) : rr2(0.09, 0.2)) * (r.trunk ? 1 : 1),
+      r: rr2(0.9, 1.8), glow: rr2(3.2, 6.4),
+    });
+  }
+
+  for (let i = 0; i < 190; i++) {
+    const a = rnd() * 6.283, k = Math.sqrt(rnd());
+    motes.push({ x: CX + Math.cos(a) * RX * 1.1 * k, y: CY + Math.sin(a) * RY * 1.1 * k,
+                 r: rr2(0.5, 1.7), ph: rnd() * 6.283, sp: rr2(0.06, 0.3),
+                 vx: rr2(-6, 6), vy: rr2(-5, 5),
+                 hue: ['#7FE9E0', '#79C0FF', '#7EE787', '#F2CC60', '#CFE9F2'][(rnd() * 5) | 0] });
+  }
+
+  for (let i = 0; i < 18; i++) {
+    const a0 = rnd() * 6.283, pts = [];
+    for (let k = 0; k <= 10; k++) {
+      const t = k / 10, a = a0 + t * rr2(1.2, 3.4), r = 10 + Math.sin(t * Math.PI) * rr2(14, 44);
+      pts.push({ x: Math.cos(a) * r, y: Math.sin(a) * r * 0.92 });
+    }
+    chromatin.push({ pts, hue: shiftHue(['#7FE9E0', '#79C0FF', '#F2CC60', '#7EE787'][(rnd() * 4) | 0], hueShift),
+                     o: rr2(0.08, 0.2), w: rr2(0.45, 0.9), sp: rr2(-0.08, 0.08) });
+  }
+
+  membranePts = blobPts(CX, CY, RX * 0.98, RY * 0.99, 5, 0.045, 0.4);
+  membranePts2 = blobPts(CX, CY, RX * 0.9, RY * 0.9, 7, 0.038, 2.1);
+}
+
+let membranePts, membranePts2;
+function blobPts(cx, cy, rx, ry, lobes, wob, phase) {
+  const pts = [];
+  for (let i = 0; i <= 140; i++) {
+    const a = (i / 140) * 6.283;
+    const k = 1 + Math.sin(a * lobes + phase) * wob + Math.sin(a * (lobes * 2 + 1) - phase * 1.7) * wob * 0.45;
+    pts.push({ x: cx + Math.cos(a) * rx * k, y: cy + Math.sin(a) * ry * k });
+  }
+  return pts;
+}
+
+/* ---------- state ---------- */
+let T = 0;                 // seconds
+let arousal = 0;           // 0..1 — the awakening
+let arousalTarget = 0;
+let mutated = false;
+let pointer = { x: -9999, y: -9999, on: false };
+let hovered = null;
+let coreHot = 0;
+
+/* ---------- drawing helpers ---------- */
+function stroke(pts, w, color, alpha, from = 0, to = 1) {
+  ctx.beginPath();
+  const i0 = Math.floor(from * (pts.length - 1)), i1 = Math.ceil(to * (pts.length - 1));
+  ctx.moveTo(pts[i0].x, pts[i0].y);
+  for (let i = i0 + 1; i <= i1; i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.lineWidth = w; ctx.strokeStyle = rgba(color, alpha);
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  ctx.stroke();
+}
+function taper(pts, w0, w1, color, a0, a1, boost) {
+  const segs = 16;
+  for (let s = 0; s < segs; s++) {
+    const k = s / segs;
+    stroke(pts, lerp(w0, w1, k) * (1 + boost * 0.5), color, lerp(a0, a1, k) * (1 + boost), k, Math.min(1, (s + 1.08) / segs));
+  }
+}
+function closed(pts) {
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x, pts[0].y);
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.closePath();
+}
+function text(str, x, y, size, ls, color, align = 'left', alpha = 1) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = color;
+  ctx.font = `${size}px ${getComputedStyle(document.body).fontFamily}`;
+  ctx.textAlign = 'left';
+  const chars = [...str];
+  let w = 0;
+  for (const ch of chars) w += ctx.measureText(ch).width + ls;
+  w -= ls;
+  let cx = align === 'center' ? x - w / 2 : align === 'right' ? x - w : x;
+  for (const ch of chars) { ctx.fillText(ch, cx, y); cx += ctx.measureText(ch).width + ls; }
+  ctx.restore();
+}
+
+/* ---------- the loop ---------- */
+let last = performance.now();
+function frame(now) {
+  const dt = Math.min(0.05, (now - last) / 1000);
+  last = now; T += dt * (reduced ? 0 : 1);
+
+  arousal += (arousalTarget - arousal) * Math.min(1, dt * (arousalTarget > arousal ? 5 : 0.55));
+  if (arousalTarget > 0) { arousalTarget -= dt * 0.13; if (arousalTarget < 0) arousalTarget = 0; }
+  coreHot += ((hovered === 'core' ? 1 : 0) - coreHot) * Math.min(1, dt * 7);
+
+  const w = innerWidth, h = innerHeight;
+  ctx.save();
+  ctx.setTransform(cvs.width / w, 0, 0, cvs.height / h, 0, 0);
+  ctx.fillStyle = '#03050a';
+  ctx.fillRect(0, 0, w, h);
+  ctx.translate(view.ox, view.oy);
+  ctx.scale(view.s, view.s);
+
+  const breath = 1 + Math.sin(T / 2.4) * 0.012 + arousal * 0.03;
+  const A = arousal;
+
+  /* medium */
+  const neb = ctx.createRadialGradient(CX, CY, 40, CX, CY, RX + 200);
+  neb.addColorStop(0, `rgba(10,32,41,${0.85 + A * 0.15})`);
+  neb.addColorStop(0.45, 'rgba(6,18,24,0.55)');
+  neb.addColorStop(1, 'rgba(3,5,10,0)');
+  ctx.fillStyle = neb;
+  ctx.fillRect(0, 0, W, H);
+
+  /* membrane */
+  ctx.save();
+  ctx.translate(CX, CY); ctx.scale(breath, breath); ctx.translate(-CX, -CY);
+  closed(membranePts);
+  const cyto = ctx.createRadialGradient(CX, CY, 60, CX, CY, RX);
+  cyto.addColorStop(0, 'rgba(8,32,42,0.5)');
+  cyto.addColorStop(1, 'rgba(4,10,16,0.1)');
+  ctx.fillStyle = cyto; ctx.fill();
+  ctx.lineWidth = 1.1; ctx.strokeStyle = `rgba(42,74,85,${0.55 + A * 0.4})`; ctx.stroke();
+  // cilia
+  ctx.lineWidth = 0.7;
+  for (let i = 0; i < 170; i++) {
+    const p = membranePts[(i * 140 / 170) | 0];
+    const a = Math.atan2(p.y - CY, p.x - CX);
+    const len = 5 + Math.sin(i * 12.9898) * 5;
+    const fl = 0.08 + 0.22 * (0.5 + 0.5 * Math.sin(T * 0.9 + i * 0.7));
+    ctx.strokeStyle = rgba('#6FD8D0', fl * (1 + A));
+    ctx.beginPath(); ctx.moveTo(p.x, p.y);
+    ctx.lineTo(p.x + Math.cos(a) * len, p.y + Math.sin(a) * len); ctx.stroke();
+  }
+  ctx.restore();
+
+  /* limbs */
+  for (const l of limbs) {
+    l.act += (((hovered && hovered.limb === l) ? 1 : 0) - l.act) * Math.min(1, dt * 6);
+    const boost = l.act * 0.9 + A * 0.7;
+    stroke(l.pts, 15, l.hue, 0.05 + boost * 0.09);
+    taper(l.pts, 6.2, 1.1, l.hue, 0.5, 0.24, boost);
+    // myelin
+    for (let i = 1; i < 10; i++) {
+      const p = along(l.pts, i / 10.5);
+      const nx = -Math.sin(p.ang), ny = Math.cos(p.ang), ww = 5.5 * (1 - i / 13);
+      ctx.beginPath(); ctx.moveTo(p.x - nx * ww, p.y - ny * ww); ctx.lineTo(p.x + nx * ww, p.y + ny * ww);
+      ctx.lineWidth = 0.8; ctx.strokeStyle = rgba(l.hue, 0.22 + boost * 0.3); ctx.stroke();
+    }
+    const e = l.pts[l.pts.length - 1];
+    const ang = (l.angle * Math.PI) / 180, ox = Math.cos(ang), oy = -Math.sin(ang);
+    ctx.beginPath(); ctx.arc(e.x, e.y, 3.4 + l.act * 2, 0, 6.283);
+    ctx.fillStyle = rgba(l.hue, 0.75 + l.act * 0.25); ctx.fill();
+    ctx.beginPath(); ctx.arc(e.x, e.y, 9 + Math.sin(T * 1.1 + l.angle) * 1.4, 0, 6.283);
+    ctx.lineWidth = 0.7; ctx.strokeStyle = rgba(l.hue, 0.3 + boost * 0.4); ctx.stroke();
+    const al = ox < -0.25 ? 'right' : ox > 0.25 ? 'left' : 'center';
+    text(l.label, e.x + ox * 26, e.y + oy * 20, 13, 4.4, rgba(l.hue, 0.9 + l.act * 0.1), al);
+    text(l.note, e.x + ox * 26, e.y + oy * 20 + 13, 7.6, 1.7, `rgba(84,102,111,${0.9})`, al);
+  }
+
+  /* dendrites + spontaneous synapses */
+  for (const d of dends) {
+    stroke(d.pts, d.w, d.hue, 0.14 + d.limb.act * 0.25 + A * 0.2);
+    d.flashAt -= dt;
+    if (d.flashAt < 0) { d.flash = 1; d.flashAt = 6 + Math.random() * 22 * (1 - A * 0.7); }
+    d.flash = Math.max(0, d.flash - dt * 2.4);
+    if (d.flash > 0.01) {
+      const tp = d.pts[d.pts.length - 1];
+      ctx.beginPath(); ctx.arc(tp.x, tp.y, 1.2 + d.flash * 4.5, 0, 6.283);
+      ctx.fillStyle = rgba(d.hue, d.flash * 0.85); ctx.fill();
+    }
+  }
+
+  /* organelles */
+  for (const n of nodes) {
+    n.act += (((hovered === n) ? 1 : 0) - n.act) * Math.min(1, dt * 8);
+    const act = n.act, s = n.size, pul = 1 + Math.sin(T * 1.1 + n.phase) * 0.035 + act * 0.14 + A * 0.06;
+    // umbilical
+    ctx.beginPath();
+    ctx.moveTo(n.hx, n.hy);
+    ctx.quadraticCurveTo((n.hx + n.x) / 2 - (n.y - n.hy) * 0.12, (n.hy + n.y) / 2 + (n.x - n.hx) * 0.12, n.x, n.y);
+    ctx.lineWidth = 1.5 + act * 1.6; ctx.strokeStyle = rgba(n.hue, 0.28 + act * 0.55 + A * 0.2); ctx.stroke();
+
+    const g = ctx.createRadialGradient(n.x, n.y, 1, n.x, n.y, s * (3.1 + act * 1.4));
+    g.addColorStop(0, rgba(n.hue, 0.16 + act * 0.3 + A * 0.08));
+    g.addColorStop(1, rgba(n.hue, 0));
+    ctx.fillStyle = g;
+    ctx.beginPath(); ctx.arc(n.x, n.y, s * (3.1 + act * 1.4), 0, 6.283); ctx.fill();
+
+    ctx.beginPath(); ctx.arc(n.x, n.y, s * 1.8 * pul, 0, 6.283);
+    ctx.fillStyle = rgba(n.hue, 0.05); ctx.fill();
+    ctx.lineWidth = 0.7; ctx.strokeStyle = rgba(n.hue, 0.32 + act * 0.45); ctx.stroke();
+
+    ctx.beginPath(); ctx.arc(n.x, n.y, s * 1.15 * pul, 0, 6.283);
+    ctx.fillStyle = 'rgba(6,16,22,0.88)'; ctx.fill();
+    ctx.strokeStyle = rgba(n.hue, 0.5 + act * 0.5); ctx.lineWidth = 0.8 + act * 0.7; ctx.stroke();
+
+    ctx.beginPath(); ctx.arc(n.x, n.y, s * 0.5 * pul, 0, 6.283);
+    ctx.fillStyle = rgba(n.hue, 0.8); ctx.fill();
+    ctx.beginPath(); ctx.arc(n.x, n.y, s * 0.25 * pul, 0, 6.283);
+    ctx.fillStyle = `rgba(242,253,255,${0.9 + act * 0.1})`; ctx.fill();
+
+    for (const st of n.sats) {
+      const a = st.a + T * st.sp * (0.3 + act * 2 + A);
+      const d = s * st.d * pul;
+      ctx.beginPath(); ctx.arc(n.x + Math.cos(a) * d, n.y + Math.sin(a) * d * 0.92, st.r * (1 + act * 0.6), 0, 6.283);
+      ctx.fillStyle = rgba(n.hue, 0.4 + act * 0.5); ctx.fill();
+    }
+    ctx.save();
+    ctx.translate(n.x, n.y); ctx.rotate(n.tilt + T * n.spin * 0.15 * (1 + act * 3));
+    ctx.beginPath(); ctx.ellipse(0, 0, s * 2.25 * pul, s * 0.9 * pul, 0, 0, 6.283);
+    ctx.lineWidth = 0.55; ctx.strokeStyle = rgba(n.hue, 0.22 + act * 0.5); ctx.stroke();
+    ctx.restore();
+
+    // a faint name, so the specimen is readable before you touch it
+    const right = n.x >= CX;
+    const lx = n.x + (right ? s * 2.4 + 9 : -(s * 2.4 + 9));
+    text(n.name, lx, n.y - 1, 9.5, 2.2, rgba(n.hue, 0.34 + act * 0.66), right ? 'left' : 'right');
+    if (act > 0.02) {
+      text(n.status, lx, n.y + 11, 6.6, 2.4, rgba(n.hue, act * 0.7), right ? 'left' : 'right');
+    }
+  }
+
+  /* morphologies */
+  for (const sk of skills) {
+    sk.act += (((hovered === sk) ? 1 : 0) - sk.act) * Math.min(1, dt * 8);
+    const o = (0.5 + 0.5 * Math.sin(T * 0.8 + sk.phase)) * 0.5 + 0.35 + sk.act * 0.5;
+    ctx.beginPath(); ctx.moveTo(sk.hx, sk.hy); ctx.lineTo(sk.x, sk.y);
+    ctx.lineWidth = 0.6; ctx.strokeStyle = rgba(sk.hue, 0.18 + sk.act * 0.4); ctx.stroke();
+    ctx.save(); ctx.translate(sk.x, sk.y);
+    ctx.strokeStyle = rgba(sk.hue, o); ctx.fillStyle = rgba(sk.hue, 0.07 + sk.act * 0.2);
+    ctx.lineWidth = 0.85 + sk.act * 0.5;
+    if (sk.form === 'hex') {
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) { const a = (i / 6) * 6.283 + 0.3; const r = 8.5 * (1 + sk.act * 0.3);
+        i ? ctx.lineTo(Math.cos(a) * r, Math.sin(a) * r) : ctx.moveTo(Math.cos(a) * r, Math.sin(a) * r); }
+      ctx.closePath(); ctx.fill(); ctx.stroke();
+      ctx.beginPath(); ctx.arc(0, 0, 2, 0, 6.283); ctx.fillStyle = rgba(sk.hue, 0.85); ctx.fill();
+    } else if (sk.form === 'rod') {
+      ctx.rotate(sk.rot + Math.sin(T * 0.3 + sk.phase) * 0.12);
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(-11, -3.6, 22, 7.2, 3.6);
+      else ctx.ellipse(0, 0, 11, 3.6, 0, 0, 6.283);
+      ctx.fill(); ctx.stroke();
+      for (const dx of [-4, 4]) { ctx.beginPath(); ctx.arc(dx, 0, 1.5, 0, 6.283); ctx.fillStyle = rgba(sk.hue, 0.7); ctx.fill(); }
+    } else if (sk.form === 'spiral') {
+      ctx.rotate(T * 0.08 + sk.rot);
+      ctx.beginPath();
+      for (let i = 0; i <= 60; i++) { const t = i / 60, a = t * 10.7, r = 1.6 + t * 9.4 * (1 + sk.act * 0.3);
+        i ? ctx.lineTo(Math.cos(a) * r, Math.sin(a) * r) : ctx.moveTo(Math.cos(a) * r, Math.sin(a) * r); }
+      ctx.stroke();
+      ctx.beginPath(); ctx.arc(0, 0, 1.6, 0, 6.283); ctx.fillStyle = rgba(sk.hue, 0.9); ctx.fill();
+    } else {
+      for (const dd of sk.dots) {
+        const a = dd.a + T * 0.06;
+        ctx.beginPath(); ctx.arc(Math.cos(a) * dd.d, Math.sin(a) * dd.d, dd.r, 0, 6.283);
+        ctx.fillStyle = rgba(sk.hue, 0.4 + sk.act * 0.4); ctx.fill();
+      }
+      ctx.beginPath(); ctx.arc(0, 0, 11, 0, 6.283); ctx.strokeStyle = rgba(sk.hue, 0.22 + sk.act * 0.4); ctx.stroke();
+    }
+    ctx.restore();
+    const right = sk.x >= CX;
+    text(sk.label, sk.x + (right ? 15 : -15), sk.y + 3.4, 6.8, 1.9,
+         `rgba(93,118,129,${0.68 + sk.act * 0.32})`, right ? 'left' : 'right');
+  }
+
+  /* core */
+  {
+    const hot = coreHot, ex = 1 + hot * 0.06 + A * 0.16 + Math.sin(T / 1.7) * 0.02;
+    const gg = ctx.createRadialGradient(CX, CY, 5, CX, CY, 272 * ex);
+    gg.addColorStop(0, `rgba(127,233,224,${0.2 + hot * 0.12 + A * 0.22})`);
+    gg.addColorStop(0.35, `rgba(60,143,168,${0.1 + A * 0.1})`);
+    gg.addColorStop(1, 'rgba(3,5,10,0)');
+    ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(CX, CY, 272 * ex, 0, 6.283); ctx.fill();
+
+    ctx.save(); ctx.translate(CX, CY); ctx.scale(ex, ex);
+    const rings = [[140, 128, 96, 1], [114, 106, -71, -1], [88, 83, 138, 1]];
+    rings.forEach(([rx, ry, per, dirn], i) => {
+      ctx.save(); ctx.rotate((T / per) * 6.283 * dirn);
+      ctx.setLineDash(i === 2 ? [18, 10] : i === 1 ? [1, 9] : [3, 12]);
+      ctx.beginPath(); ctx.ellipse(0, 0, rx, ry, 0, 0, 6.283);
+      ctx.lineWidth = 0.8; ctx.strokeStyle = `rgba(127,233,224,${0.3 + hot * 0.25 + A * 0.3})`; ctx.stroke();
+      ctx.setLineDash([]); ctx.restore();
+    });
+    // nucleus
+    const nb = 1 + Math.sin(T / 1.08) * 0.026;
+    ctx.save(); ctx.scale(nb, nb);
+    const ng = ctx.createRadialGradient(-20, -24, 4, 0, 0, 78);
+    ng.addColorStop(0, `rgba(191,246,240,${0.42 + hot * 0.2 + A * 0.2})`);
+    ng.addColorStop(0.45, 'rgba(44,126,140,0.3)');
+    ng.addColorStop(1, 'rgba(7,23,30,0.78)');
+    ctx.beginPath();
+    for (let i = 0; i <= 60; i++) {
+      const a = (i / 60) * 6.283;
+      const k = 1 + Math.sin(a * 6 + 1.2) * 0.055 + Math.sin(a * 13 - 2) * 0.025;
+      const x = Math.cos(a) * 74 * k, y = Math.sin(a) * 69 * k;
+      i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+    }
+    ctx.closePath(); ctx.fillStyle = ng; ctx.fill();
+    ctx.lineWidth = 1; ctx.strokeStyle = `rgba(143,243,234,${0.5 + hot * 0.4})`; ctx.stroke();
+    for (const ch of chromatin) {
+      ctx.save(); ctx.rotate(T * ch.sp);
+      ctx.beginPath();
+      ch.pts.forEach((p, i) => (i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y)));
+      ctx.lineWidth = ch.w; ctx.strokeStyle = rgba(ch.hue, ch.o + A * 0.3); ctx.stroke();
+      ctx.restore();
+    }
+    ctx.restore();
+    // nucleolus heartbeat
+    const beat = 1 + Math.pow(Math.max(0, Math.sin(T * 1.6)), 8) * 0.35 + A * 0.3;
+    const ig = ctx.createRadialGradient(-4, -5, 1, 0, 0, 21 * beat);
+    ig.addColorStop(0, 'rgba(255,255,255,0.95)');
+    ig.addColorStop(0.4, 'rgba(156,240,232,0.7)');
+    ig.addColorStop(1, 'rgba(127,233,224,0)');
+    ctx.fillStyle = ig; ctx.beginPath(); ctx.arc(0, 0, 21 * beat, 0, 6.283); ctx.fill();
+    ctx.fillStyle = 'rgba(246,254,255,0.95)';
+    ctx.beginPath(); ctx.arc(0, 0, 6 * beat, 0, 6.283); ctx.fill();
+    ctx.restore();
+
+    text('DEEBYANSHU JHA', CX, CY + 126, 21, 11, `rgba(230,247,250,${0.95})`, 'center');
+    ctx.beginPath(); ctx.moveTo(CX - 96, CY + 137); ctx.lineTo(CX + 96, CY + 137);
+    ctx.lineWidth = 0.6; ctx.strokeStyle = 'rgba(127,233,224,0.28)'; ctx.stroke();
+    text('IDENTITY', CX, CY + 152, 8, 6, 'rgba(127,233,224,0.7)', 'center');
+    text('COMPUTER SCIENCE STUDENT · BUILDER', CX, CY + 166, 7, 3, 'rgba(82,104,111,1)', 'center');
+    text(GENOME.specimen.substrate, CX, CY + 179, 7, 3, 'rgba(82,104,111,1)', 'center');
+  }
+
+  /* impulses */
+  for (const p of particles) {
+    const speed = p.sp * (0.55 + A * 1.9 + (p.rail.limb && p.rail.limb.act ? p.rail.limb.act * 1.1 : 0)
+                   + (p.rail.node && p.rail.node.act ? p.rail.node.act * 1.6 : 0));
+    p.t += p.dir * speed * dt;
+    if (p.t > 1) p.t -= 1; if (p.t < 0) p.t += 1;
+    const pos = along(p.rail.pts, p.t);
+    const fade = Math.sin(Math.min(1, p.t) * Math.PI);
+    const glow = ctx.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, p.glow * (1 + A * 0.7));
+    glow.addColorStop(0, rgba(p.rail.hue, 0.32 * fade));
+    glow.addColorStop(1, rgba(p.rail.hue, 0));
+    ctx.fillStyle = glow;
+    ctx.beginPath(); ctx.arc(pos.x, pos.y, p.glow * (1 + A * 0.7), 0, 6.283); ctx.fill();
+    ctx.fillStyle = `rgba(244,254,255,${(0.85 + A * 0.15) * fade})`;
+    ctx.beginPath(); ctx.arc(pos.x, pos.y, p.r * (1 + A * 0.4), 0, 6.283); ctx.fill();
+  }
+
+  /* motes */
+  for (const m of motes) {
+    const x = m.x + Math.sin(T * m.sp + m.ph) * m.vx;
+    const y = m.y + Math.cos(T * m.sp * 0.8 + m.ph) * m.vy;
+    const o = 0.12 + 0.4 * (0.5 + 0.5 * Math.sin(T * 0.7 + m.ph));
+    ctx.beginPath(); ctx.arc(x, y, m.r, 0, 6.283);
+    ctx.fillStyle = rgba(m.hue, o * (1 + A * 0.6)); ctx.fill();
+  }
+
+  /* instrument */
+  drawHud();
+  ctx.restore();
+  requestAnimationFrame(frame);
+}
+
+function drawHud() {
+  const sp = GENOME.specimen;
+  const dim = 'rgba(78,101,112,1)', cy = 'rgba(127,233,224,0.82)';
+  text(`SPECIMEN ${sp.id}`, 44, 52, 7.6, 1.9, cy);
+  text(`DESIGNATION ${sp.designation}`, 44, 68, 7.6, 1.9, dim);
+  text(`CLASS ${sp.classification}`, 44, 82, 7.6, 1.9, dim);
+  text(`HABITAT ${sp.habitat}`, 44, 96, 7.6, 1.9, dim);
+  text(`GERMINATED ${sp.germination}`, 44, 110, 7.6, 1.9, dim);
+
+  const state = arousal > 0.55 ? 'AROUSED' : arousal > 0.15 ? 'SETTLING' : mutated ? 'MUTATED' : 'RESTING';
+  text('LIVE CULTURE', W - 44, 52, 7.6, 1.9, cy, 'right');
+  text(`STATE ${state}`, W - 44, 68, 7.6, 1.9, dim, 'right');
+  text(`ORGANELLES ${GENOME.nodes.length}`, W - 44, 82, 7.6, 1.9, dim, 'right');
+  text(`AROUSAL ${(arousal * 100).toFixed(0)}%`, W - 44, 96, 7.6, 1.9, dim, 'right');
+  text(`IMPULSES ${particles.length}`, W - 44, 110, 7.6, 1.9, dim, 'right');
+  const bt = Math.pow(Math.max(0, Math.sin(T * 1.6)), 8);
+  ctx.beginPath(); ctx.arc(W - 36, 47, 3 + bt * 2, 0, 6.283);
+  ctx.fillStyle = `rgba(126,231,135,${0.3 + bt * 0.7})`; ctx.fill();
+
+  const keys = GENOME.branches;
+  const ky = H - 52 - (keys.length - 1) * 15;
+  text('NEURAL SYSTEMS', W - 44, ky - 20, 7.6, 1.9, cy, 'right');
+  keys.forEach((b, i) => {
+    const y = ky + i * 15, l = limbs[i];
+    ctx.beginPath(); ctx.arc(W - 48, y - 3.4, 2.6 + (l ? l.act * 2 : 0), 0, 6.283);
+    ctx.fillStyle = rgba(l ? l.hue : b.hue, 0.85); ctx.fill();
+    text(b.label, W - 58, y, 7.6, 1.9, `rgba(78,101,112,${0.7 + (l ? l.act * 0.3 : 0)})`, 'right');
+  });
+
+  ctx.strokeStyle = 'rgba(46,74,84,0.7)'; ctx.lineWidth = 1;
+  const tick = (x, y, w, h) => { ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + w, y); ctx.moveTo(x, y); ctx.lineTo(x, y + h); ctx.stroke(); };
+  tick(28, 28, 20, 20); tick(W - 28, 28, -20, 20); tick(28, H - 28, 20, -20); tick(W - 28, H - 28, -20, -20);
+}
+
+/* ---------- reacting to being looked at ---------- */
+function hitTest(wx, wy) {
+  if (Math.hypot(wx - CX, wy - CY) < 130) return 'core';
+  let best = null, bd = 1e9;
+  for (const n of nodes) {
+    const d = Math.hypot(wx - n.x, wy - n.y);
+    if (d < n.size * 2.3 && d < bd) { bd = d; best = n; }
+  }
+  if (best) return best;
+  for (const s of skills) {
+    const d = Math.hypot(wx - s.x, wy - s.y);
+    if (d < 16 && d < bd) { bd = d; best = s; }
+  }
+  return best;
+}
+
+function showProbe(target, px, py) {
+  if (!target || target === 'core') { probeEl.classList.remove('live'); return; }
+  const isNode = !!target.desc;
+  probeEl.style.color = target.hue;
+  probeEl.innerHTML = isNode
+    ? `<div class="nm">${target.name}</div><div class="tc">${target.tech}</div>`
+      + `<div class="st">STATUS: ${target.status}</div><div class="ds">${target.desc}</div>`
+      + (target.url ? `<div class="lk">▸ ${target.url.replace('https://github.com/', 'GITHUB / ')}</div>` : '')
+    : `<div class="nm">${target.label}</div><div class="tc">MORPHOLOGY: ${target.form.toUpperCase()} · ${target.limb.label}</div>`;
+  const w = 340, h = probeEl.offsetHeight || 90;
+  let x = px + 26, y = py - 18;
+  if (x + w > innerWidth - 16) x = px - w - 20;
+  if (y + h > innerHeight - 16) y = innerHeight - h - 16;
+  if (y < 12) y = 12;
+  probeEl.style.left = x + 'px';
+  probeEl.style.top = y + 'px';
+  probeEl.classList.add('live');
+}
+
+cvs.addEventListener('pointermove', (e) => {
+  pointer = { x: e.clientX, y: e.clientY, on: true };
+  const w = toWorld(e.clientX, e.clientY);
+  hovered = hitTest(w.x, w.y);
+  cvs.classList.toggle('on-node', !!hovered);
+  showProbe(hovered, e.clientX, e.clientY);
+});
+cvs.addEventListener('pointerleave', () => { hovered = null; probeEl.classList.remove('live'); });
+
+function banner(main, sub, ms = 2600) {
+  bannerEl.querySelector('b').textContent = main;
+  bannerEl.querySelector('s').textContent = sub;
+  bannerEl.classList.add('live');
+  clearTimeout(banner._t);
+  banner._t = setTimeout(() => bannerEl.classList.remove('live'), ms);
+}
+
+cvs.addEventListener('pointerdown', (e) => {
+  const w = toWorld(e.clientX, e.clientY);
+  const hit = hitTest(w.x, w.y);
+  if (hit === 'core') {
+    arousalTarget = 1;
+    banner('SYSTEM AWAKENING', 'ALL PATHWAYS ILLUMINATED');
+    return;
+  }
+  if (hit && hit.url) window.open(hit.url, '_blank', 'noopener');
+});
+
+/* ---------- the mutation ---------- */
+const KONAMI = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+let kbuf = [];
+addEventListener('keydown', (e) => {
+  kbuf.push(e.key.length === 1 ? e.key.toLowerCase() : e.key);
+  if (kbuf.length > KONAMI.length) kbuf.shift();
+  if (kbuf.join(',') === KONAMI.join(',')) {
+    kbuf = [];
+    mutated = true;
+    hueShift = (hueShift + 47 + Math.random() * 60) | 0;
+    seed = (Math.random() * 0xffffff) | 0;
+    grow();
+    arousalTarget = 1;
+    banner('YOU FOUND THE MUTATION', 'THE ORGANISM HAS REGROWN ITSELF');
+  }
+  if (e.key === ' ') { e.preventDefault(); arousalTarget = 1; banner('SYSTEM AWAKENING', 'ALL PATHWAYS ILLUMINATED'); }
+});
+
+resize();
+grow();
+requestAnimationFrame(frame);
+
+// a first breath, so nobody arrives to a still image
+setTimeout(() => { arousalTarget = 0.75; }, 700);
+</script>

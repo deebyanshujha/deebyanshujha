@@ -1,0 +1,485 @@
+{
+  "specimen": {
+    "id": "DJ-0001",
+    "designation": "DEEBYANSHU JHA",
+    "classification": "COMPUTER SCIENCE STUDENT / BUILDER",
+    "substrate": "SYSTEMS + WEB + AI",
+    "habitat": "VELLORE, TN, IN",
+    "germination": "2024-09-25",
+    "handle": "deebyanshujha"
+  },
+  "branches": [
+    {
+      "id": "build",
+      "label": "BUILD",
+      "angle": 158,
+      "reach": 0.98,
+      "hue": "#F2CC60",
+      "note": "things made from scratch"
+    },
+    {
+      "id": "systems",
+      "label": "SYSTEMS",
+      "angle": 206,
+      "reach": 0.96,
+      "hue": "#56D4DD",
+      "note": "kernels, sockets, memory"
+    },
+    {
+      "id": "projects",
+      "label": "PROJECTS",
+      "angle": 336,
+      "reach": 1,
+      "hue": "#79C0FF",
+      "note": "shipped organisms"
+    },
+    {
+      "id": "experiments",
+      "label": "EXPERIMENTS",
+      "angle": 30,
+      "reach": 0.96,
+      "hue": "#7EE787",
+      "note": "unstable cultures"
+    },
+    {
+      "id": "learning",
+      "label": "LEARNING",
+      "angle": 284,
+      "reach": 0.9,
+      "hue": "#B0A9F5",
+      "note": "active growth zone"
+    },
+    {
+      "id": "future",
+      "label": "FUTURE",
+      "angle": 104,
+      "reach": 0.86,
+      "hue": "#9FB6C9",
+      "note": "undifferentiated tissue"
+    }
+  ],
+  "nodes": [
+    {
+      "branch": "build",
+      "t": 0.5,
+      "side": 1,
+      "spread": 80,
+      "size": 20,
+      "name": "LAMB",
+      "sub": "INTERPRETED LANGUAGE",
+      "tech": "JAVA / JVM / TREE-WALK",
+      "status": "SHIPPED",
+      "desc": "Lexer, recursive-descent parser, AST, resolver, closures, classes, inheritance.",
+      "url": "https://github.com/deebyanshujha/Lamb"
+    },
+    {
+      "branch": "build",
+      "t": 0.86,
+      "side": -1,
+      "spread": 64,
+      "size": 12,
+      "name": "DOCS-LAMB",
+      "sub": "LANGUAGE SPEC",
+      "tech": "HTML / DOCS",
+      "status": "LIVE",
+      "desc": "Written documentation for the Lamb language.",
+      "url": "https://github.com/deebyanshujha/docs-lamb"
+    },
+    {
+      "branch": "systems",
+      "t": 0.5,
+      "side": -1,
+      "spread": 70,
+      "size": 18,
+      "name": "CHATTERNET",
+      "sub": "MULTI-THREADED TCP CHAT",
+      "tech": "C++ / SOCKETS / THREADS",
+      "status": "SHIPPED",
+      "desc": "Client-server group chat: concurrent users, real-time broadcast.",
+      "url": "https://github.com/deebyanshujha/ChatterNet"
+    },
+    {
+      "branch": "systems",
+      "t": 0.8,
+      "side": 1,
+      "spread": 66,
+      "size": 15,
+      "name": "WINSOCK ECHO",
+      "sub": "TCP ECHO SERVER",
+      "tech": "C++ / WINSOCK / TCP-IP",
+      "status": "SHIPPED",
+      "desc": "bind, listen, accept, send, recv - TCP from the bottom up.",
+      "url": "https://github.com/deebyanshujha/WinSock-Echo-Server"
+    },
+    {
+      "branch": "systems",
+      "t": 0.3,
+      "side": 1,
+      "spread": 60,
+      "size": 13,
+      "name": "XV6",
+      "sub": "SYSCALL TRACING",
+      "tech": "C / UNIX / KERNEL",
+      "status": "IN VIVO",
+      "desc": "Traps, syscalls, processes and scheduler behaviour, read from source.",
+      "url": ""
+    },
+    {
+      "branch": "projects",
+      "t": 0.4,
+      "side": -1,
+      "spread": 96,
+      "size": 19,
+      "name": "MY_PORTFOLIO",
+      "sub": "PERSONAL SITE",
+      "tech": "TYPESCRIPT / REACT",
+      "status": "EVOLVING",
+      "desc": "Current personal portfolio surface.",
+      "url": "https://github.com/deebyanshujha/my_portfolio"
+    },
+    {
+      "branch": "projects",
+      "t": 0.7,
+      "side": 1,
+      "spread": 84,
+      "size": 16,
+      "name": "PROJECT CAMP",
+      "sub": "COLLAB PM BACKEND",
+      "tech": "NODE / REST / AUTH-RBAC",
+      "status": "SHIPPED",
+      "desc": "Projects, tasks, subtasks, notes, role-based access control.",
+      "url": "https://github.com/deebyanshujha/Project_camp"
+    },
+    {
+      "branch": "projects",
+      "t": 0.92,
+      "side": -1,
+      "spread": 66,
+      "size": 14,
+      "name": "HOSTELFIX",
+      "sub": "MAINTENANCE PLATFORM",
+      "tech": "JAVASCRIPT / DASHBOARD",
+      "status": "SHIPPED",
+      "desc": "Complaint intake with images, triage, staff assignment, resolution tracking.",
+      "url": "https://github.com/deebyanshujha/hostelfix_vitv"
+    },
+    {
+      "branch": "projects",
+      "t": 0.56,
+      "side": 1,
+      "spread": 52,
+      "size": 11,
+      "name": "RAPID RECALL",
+      "sub": "MULTIPLAYER WORD GAME",
+      "tech": "JAVASCRIPT / DOM",
+      "status": "SHIPPED",
+      "desc": "Turn-based category recall, duplicate prevention, live scoring, timers.",
+      "url": "https://github.com/deebyanshujha/rapid-recall"
+    },
+    {
+      "branch": "experiments",
+      "t": 0.58,
+      "side": 1,
+      "spread": 86,
+      "size": 17,
+      "name": "PLACEMENT PREDICTOR",
+      "sub": "WILL YOU GET PLACED?",
+      "tech": "PYTHON / JUPYTER / ML",
+      "status": "CULTURED",
+      "desc": "A small supervised model trained on placement outcomes.",
+      "url": "https://github.com/deebyanshujha/placement_predictor"
+    },
+    {
+      "branch": "experiments",
+      "t": 0.86,
+      "side": -1,
+      "spread": 70,
+      "size": 15,
+      "name": "ON_CLOUD_9",
+      "sub": "PYTHON EXPERIMENT",
+      "tech": "PYTHON",
+      "status": "MUTATING",
+      "desc": "Active experimental culture. Shape not yet fixed.",
+      "url": "https://github.com/deebyanshujha/On_Cloud_9"
+    },
+    {
+      "branch": "experiments",
+      "t": 0.3,
+      "side": -1,
+      "spread": 58,
+      "size": 11,
+      "name": "MOVIE RECOMMENDER",
+      "sub": "CHROME EXTENSION",
+      "tech": "JAVASCRIPT / OMDB API",
+      "status": "SHIPPED",
+      "desc": "A different film on every popup.",
+      "url": "https://github.com/deebyanshujha/chrome-extension---movie-recommendation"
+    },
+    {
+      "branch": "learning",
+      "t": 0.5,
+      "side": 1,
+      "spread": 72,
+      "size": 18,
+      "name": "700+ PROBLEMS",
+      "sub": "DELIBERATE PRACTICE",
+      "tech": "C++ / DSA / NEETCODE",
+      "status": "ONGOING",
+      "desc": "Not a streak. Practice for thinking clearly under constraints.",
+      "url": "https://github.com/deebyanshujha/neetcode-submissions"
+    },
+    {
+      "branch": "learning",
+      "t": 0.88,
+      "side": 1,
+      "spread": 62,
+      "size": 12,
+      "name": "OS INTERNALS",
+      "sub": "PROCESSES / TRAPS / SCHED",
+      "tech": "C / XV6 / LINUX",
+      "status": "ABSORBING",
+      "desc": "program -> syscall -> kernel -> scheduler -> hardware.",
+      "url": ""
+    },
+    {
+      "branch": "future",
+      "t": 0.58,
+      "side": 1,
+      "spread": 66,
+      "size": 12,
+      "name": "COMPILERS",
+      "sub": "BEYOND TREE-WALKING",
+      "tech": "BYTECODE / VM / OPT",
+      "status": "UNFORMED",
+      "desc": "Next step after Lamb: a real virtual machine.",
+      "url": ""
+    },
+    {
+      "branch": "future",
+      "t": 0.92,
+      "side": -1,
+      "spread": 58,
+      "size": 11,
+      "name": "DISTRIBUTED",
+      "sub": "MANY MACHINES, ONE STATE",
+      "tech": "CONSENSUS / RPC",
+      "status": "UNFORMED",
+      "desc": "Because one server is never the interesting case.",
+      "url": ""
+    }
+  ],
+  "identity": {
+    "lines": [
+      "DEEBYANSHU JHA",
+      "COMPUTER SCIENCE STUDENT",
+      "BUILDER",
+      "SYSTEMS + WEB + AI"
+    ]
+  },
+  "skills": [
+    {
+      "branch": "build",
+      "t": 0.28,
+      "side": -1,
+      "d": 46,
+      "form": "hex",
+      "label": "JAVA"
+    },
+    {
+      "branch": "build",
+      "t": 0.66,
+      "side": 1,
+      "d": 38,
+      "form": "spiral",
+      "label": "PARSERS"
+    },
+    {
+      "branch": "build",
+      "t": 0.96,
+      "side": 1,
+      "d": 38,
+      "form": "rod",
+      "label": "AST"
+    },
+    {
+      "branch": "systems",
+      "t": 0.24,
+      "side": -1,
+      "d": 42,
+      "form": "hex",
+      "label": "C"
+    },
+    {
+      "branch": "systems",
+      "t": 0.62,
+      "side": 1,
+      "d": 40,
+      "form": "hex",
+      "label": "C++"
+    },
+    {
+      "branch": "systems",
+      "t": 0.92,
+      "side": -1,
+      "d": 36,
+      "form": "rod",
+      "label": "LINUX"
+    },
+    {
+      "branch": "systems",
+      "t": 0.44,
+      "side": -1,
+      "d": 34,
+      "form": "cluster",
+      "label": "SOCKETS"
+    },
+    {
+      "branch": "projects",
+      "t": 0.22,
+      "side": 1,
+      "d": 48,
+      "form": "hex",
+      "label": "TYPESCRIPT"
+    },
+    {
+      "branch": "projects",
+      "t": 0.55,
+      "side": -1,
+      "d": 36,
+      "form": "hex",
+      "label": "JAVASCRIPT"
+    },
+    {
+      "branch": "projects",
+      "t": 0.82,
+      "side": 1,
+      "d": 38,
+      "form": "spiral",
+      "label": "REACT"
+    },
+    {
+      "branch": "projects",
+      "t": 0.98,
+      "side": 1,
+      "d": 40,
+      "form": "rod",
+      "label": "NODE"
+    },
+    {
+      "branch": "experiments",
+      "t": 0.26,
+      "side": 1,
+      "d": 42,
+      "form": "hex",
+      "label": "PYTHON"
+    },
+    {
+      "branch": "experiments",
+      "t": 0.44,
+      "side": 1,
+      "d": 44,
+      "form": "cluster",
+      "label": "AI / ML"
+    },
+    {
+      "branch": "experiments",
+      "t": 0.9,
+      "side": -1,
+      "d": 32,
+      "form": "spiral",
+      "label": "APIS"
+    },
+    {
+      "branch": "learning",
+      "t": 0.3,
+      "side": 1,
+      "d": 40,
+      "form": "cluster",
+      "label": "DSA"
+    },
+    {
+      "branch": "learning",
+      "t": 0.72,
+      "side": -1,
+      "d": 34,
+      "form": "rod",
+      "label": "GIT"
+    },
+    {
+      "branch": "future",
+      "t": 0.3,
+      "side": -1,
+      "d": 44,
+      "form": "spiral",
+      "label": "ARCHITECTURE"
+    },
+    {
+      "branch": "future",
+      "t": 0.74,
+      "side": 1,
+      "d": 36,
+      "form": "cluster",
+      "label": "NETWORKS"
+    }
+  ],
+  "metabolism": {
+    "commits": 525,
+    "activeDays": 0,
+    "repos": 26,
+    "weeks": [
+      6,
+      13,
+      15,
+      15,
+      11,
+      13,
+      10,
+      11,
+      13,
+      10,
+      12,
+      10,
+      16,
+      14,
+      11,
+      10,
+      10,
+      10,
+      5,
+      5,
+      6,
+      8,
+      6,
+      8,
+      11,
+      4,
+      8,
+      4,
+      3,
+      7,
+      3,
+      5,
+      8,
+      12,
+      14,
+      14,
+      15,
+      10,
+      14,
+      12,
+      10,
+      11,
+      13,
+      12,
+      13,
+      13,
+      16,
+      13,
+      12,
+      10,
+      6,
+      4
+    ],
+    "updated": "2026-08-25"
+  }
+}

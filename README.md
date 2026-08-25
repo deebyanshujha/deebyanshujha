@@ -1,142 +1,91 @@
-<p align="center">
-  <img src="./assets/first-principles-hero.svg" alt="A systems themed GitHub profile hero for Deebyanshu Jha" width="100%" />
-</p>
+<div align="center">
 
-<h3 align="center">I enjoy understanding the layers beneath the software I build.</h3>
+<a href="https://deebyanshujha.github.io/deebyanshujha/interactive/">
+  <img src="./assets/organism.svg" width="100%"
+       alt="Specimen DJ-0001: Deebyanshu Jha rendered as a living digital organism. A nucleus labelled DEEBYANSHU JHA sits inside a breathing membrane. Six neural systems grow outward from it — BUILD, SYSTEMS, PROJECTS, EXPERIMENTS, LEARNING and FUTURE. Organelles along those limbs are real projects: the Lamb interpreter, ChatterNet, a WinSock echo server, xv6 study, a portfolio, Project Camp, HostelFix, Rapid Recall, a placement predictor and 700+ solved problems. Smaller cell forms are the languages and tools behind them. Impulses travel the pathways continuously." />
+</a>
 
-<p align="center">
-  <code>CS Student</code>
-  &nbsp;|&nbsp;
-  <code>700+ DSA Problems</code>
-  &nbsp;|&nbsp;
-  <code>Lamb Interpreter</code>
-  &nbsp;|&nbsp;
-  <code>xv6</code>
-  &nbsp;|&nbsp;
-  <code>TCP Servers</code>
-</p>
+<sub><a href="https://deebyanshujha.github.io/deebyanshujha/interactive/"><b>ENTER&nbsp;THE&nbsp;LIVE&nbsp;CULTURE&nbsp;&nbsp;→</b></a></sub>
 
----
+<sub>the specimen above is a photograph · the culture reacts to being touched</sub>
 
-## ./intro
+<br>
 
-I am a Computer Science student who likes building things that make computers feel less like black boxes.
+</div>
 
-My story is not about collecting frameworks. It is about asking what happens underneath: how source code becomes behavior, how a server handles connections, how memory and processes are managed, and how small design choices turn into system architecture.
+<details>
+<summary><sub><b>▸ &nbsp;PROBE THE SPECIMEN</b> &nbsp;— ask the organism to describe itself in plain text</sub></summary>
 
-I have solved 700+ DSA problems because I believe clear thinking and strong problem solving come before fancy technologies.
+<br>
 
-```txt
-source code   -> tokens -> grammar -> AST -> runtime
-packet stream -> socket -> protocol -> state -> response
-program       -> syscall -> kernel -> scheduler -> hardware
-```
+**CORE** &nbsp;·&nbsp; Deebyanshu Jha &nbsp;·&nbsp; Computer Science student &nbsp;·&nbsp; builder &nbsp;·&nbsp; systems + web + AI &nbsp;·&nbsp; Vellore, IN
+<br>*I like building things that make computers feel less like black boxes.*
 
-## ./currently-exploring
+**BUILD** &nbsp;— things made from scratch
+<br>[`LAMB`](https://github.com/deebyanshujha/Lamb) &nbsp; Java / JVM / tree-walking &nbsp;·&nbsp; **shipped** &nbsp;— lexer, recursive-descent parser, AST, resolver, closures, classes, inheritance
+<br>[`docs-lamb`](https://github.com/deebyanshujha/docs-lamb) &nbsp; HTML &nbsp;·&nbsp; **live** &nbsp;— a language nobody can read is not finished
 
-<table>
-  <tr>
-    <td width="25%"><strong>Operating Systems</strong><br><sub>xv6, processes, traps, syscalls, scheduling</sub></td>
-    <td width="25%"><strong>Networking</strong><br><sub>TCP, sockets, server state, message flow</sub></td>
-    <td width="25%"><strong>Language Design</strong><br><sub>parsing, scope, closures, runtime environments</sub></td>
-    <td width="25%"><strong>Architecture</strong><br><sub>interfaces, boundaries, maintainability</sub></td>
-  </tr>
-</table>
+**SYSTEMS** &nbsp;— kernels, sockets, memory
+<br>[`ChatterNet`](https://github.com/deebyanshujha/ChatterNet) &nbsp; C++ / sockets / threads &nbsp;·&nbsp; **shipped** &nbsp;— multi-threaded TCP group chat, concurrent clients, live broadcast
+<br>[`WinSock-Echo-Server`](https://github.com/deebyanshujha/WinSock-Echo-Server) &nbsp; C++ / WinSock &nbsp;·&nbsp; **shipped** &nbsp;— bind, listen, accept, send, recv
+<br>`xv6` &nbsp; C / UNIX / kernel &nbsp;·&nbsp; **in vivo** &nbsp;— traps, syscalls, processes, scheduler behaviour, read from source
 
-## ./systems-map
+**PROJECTS** &nbsp;— shipped organisms
+<br>[`my_portfolio`](https://github.com/deebyanshujha/my_portfolio) &nbsp; TypeScript / React &nbsp;·&nbsp; **evolving**
+<br>[`Project_camp`](https://github.com/deebyanshujha/Project_camp) &nbsp; Node / REST / RBAC &nbsp;·&nbsp; **shipped** &nbsp;— projects, tasks, subtasks, notes, role-based access
+<br>[`hostelfix_vitv`](https://github.com/deebyanshujha/hostelfix_vitv) &nbsp; JavaScript &nbsp;·&nbsp; **shipped** &nbsp;— complaint intake, triage, staff assignment, resolution tracking
+<br>[`rapid-recall`](https://github.com/deebyanshujha/rapid-recall) &nbsp; JavaScript / DOM &nbsp;·&nbsp; **shipped** &nbsp;— multiplayer category recall with live scoring
 
-<p align="center">
-  <img src="./assets/systems-map.svg" alt="A layered systems map showing how Deebyanshu studies software from application behavior down to kernels and hardware" width="100%" />
-</p>
+**EXPERIMENTS** &nbsp;— unstable cultures
+<br>[`placement_predictor`](https://github.com/deebyanshujha/placement_predictor) &nbsp; Python / Jupyter / ML &nbsp;·&nbsp; **cultured**
+<br>[`On_Cloud_9`](https://github.com/deebyanshujha/On_Cloud_9) &nbsp; Python &nbsp;·&nbsp; **mutating**
+<br>[`movie recommender`](https://github.com/deebyanshujha/chrome-extension---movie-recommendation) &nbsp; JavaScript / OMDB &nbsp;·&nbsp; **shipped**
 
-## ./things-built
+**LEARNING** &nbsp;— active growth zone
+<br>[`700+ problems`](https://github.com/deebyanshujha/neetcode-submissions) &nbsp; C++ / DSA &nbsp;·&nbsp; **ongoing** &nbsp;— not a streak; practice for thinking clearly under constraints
+<br>`OS internals` &nbsp; C / xv6 / Linux &nbsp;·&nbsp; **absorbing** &nbsp;— program → syscall → kernel → scheduler → hardware
 
-### Lamb
+**FUTURE** &nbsp;— undifferentiated tissue
+<br>`compilers` &nbsp;·&nbsp; **unformed** &nbsp;— stop walking the tree, emit bytecode, build the machine that runs it
+<br>`distributed systems` &nbsp;·&nbsp; **unformed** &nbsp;— one server is never the interesting case
 
-An interpreted programming language written in Java.
+**MORPHOLOGY** &nbsp;— the cell forms scattered through the tissue
+<br><sub>`Java` `C` `C++` `JavaScript` `TypeScript` `Python` `React` `Node` `Linux` `Git` `sockets` `parsers` `AST` `DSA` `AI/ML` `APIs` `architecture` `networks`</sub>
 
-<p align="center">
-  <img src="./assets/lamb-pipeline.svg" alt="Lamb interpreter pipeline showing lexer, parser, AST, resolver, and runtime" width="100%" />
-</p>
+**METABOLISM** &nbsp;— impulse density, pathway glow and the respiration trace are regenerated daily from the real contribution calendar. If the reading fails, the last healthy organism stays in place.
 
-Building Lamb helped me understand how a language is shaped from the inside:
+</details>
 
-- Lexer
-- Recursive descent parser
-- AST generation
-- Visitor pattern
-- Resolver
-- Functions and closures
-- Classes and inheritance
-- Runtime environment
+<details>
+<summary><sub>▸ &nbsp;the culture will not load</sub></summary>
 
-### TCP Chat Server
+<sub>The live culture is served by GitHub Pages from [`interactive/`](./interactive/). If the link is dark, it has not been switched on yet — mirror: <a href="https://htmlpreview.github.io/?https://github.com/deebyanshujha/deebyanshujha/blob/main/interactive/index.html">htmlpreview</a>.</sub>
 
-A networking project focused on how clients communicate over TCP, how messages move through sockets, and how server-side state is managed across connections.
+</details>
 
-### Problem Solving
+<div align="center">
+<br>
 
-700+ DSA problems solved as deliberate practice in reasoning, pattern recognition, and implementation discipline. For me, DSA is not about streaks; it is practice for thinking clearly under constraints.
+<sub>
+<a href="https://www.linkedin.com/in/deebyanshujha/">LINKEDIN</a> &nbsp;·&nbsp;
+<a href="mailto:jhadeebyanshu@gmail.com">EMAIL</a> &nbsp;·&nbsp;
+<a href="https://leetcode.com/u/deebyanshujha/">LEETCODE</a> &nbsp;·&nbsp;
+<a href="https://www.hackerrank.com/profile/jhadeebyanshu">HACKERRANK</a> &nbsp;·&nbsp;
+<a href="https://codolio.com/profile/deebyanshujha">CODOLIO</a>
+</sub>
 
-## ./learning-now
+<br><br>
 
-```txt
-xv6              kernel structure, traps, syscalls, scheduler behavior
-networking       TCP/IP, socket programming, client-server communication
-interpreters     parsing, resolving names, closures, object models
-backend systems  clean interfaces, state flow, long-term maintainability
-```
+<sub><sup>the organism is grown, not drawn — <a href="./tools/generate-organism.mjs"><code>tools/generate-organism.mjs</code></a> from <a href="./data/organism.json"><code>data/organism.json</code></a></sup></sub>
 
-I do not want to become someone who only knows frameworks. I want to understand why things work internally.
+</div>
 
-## ./technologies
+<!--
+  You went looking in the source. Good instinct.
 
-I try to keep tools in their place: useful, but secondary to understanding the system.
+    The core can be woken.
+    The arrow keys remember an old cheat.
+    Zoom into the SVG until the text stops being a smudge.
 
-<p>
-  <img src="https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=F97316" alt="Java" />
-  <img src="https://img.shields.io/badge/C%2B%2B-0D1117?style=for-the-badge&logo=cplusplus&logoColor=6295CB" alt="C++" />
-  <img src="https://img.shields.io/badge/C-0D1117?style=for-the-badge&logo=c&logoColor=A8B9CC" alt="C" />
-  <img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python" />
-  <img src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
-  <img src="https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux" />
-  <img src="https://img.shields.io/badge/VS_Code-0D1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC" alt="VS Code" />
-</p>
-
-<table>
-  <tr>
-    <td><code>core</code></td>
-    <td>Data structures, algorithms, operating systems, networking, compilers</td>
-  </tr>
-  <tr>
-    <td><code>backend</code></td>
-    <td>APIs, server-side logic, state management, architecture boundaries</td>
-  </tr>
-  <tr>
-    <td><code>web basics</code></td>
-    <td>HTML, CSS, JavaScript</td>
-  </tr>
-</table>
-
-## ./debug-break
-
-<p align="center">
-  <img height="220" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjJxbXptZmoyeHI0aGR5YXRpdXM3NnkxZWJ0ODdnaGZpYTIwYnAyciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.gif" alt="Coding meme break" />
-</p>
-
-## ./contact
-
-<p>
-  <a href="https://www.linkedin.com/in/deebyanshujha/"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=79C0FF" alt="LinkedIn" /></a>
-  <a href="mailto:jhadeebyanshu@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
-  <a href="https://leetcode.com/u/deebyanshujha/"><img src="https://img.shields.io/badge/LeetCode-0D1117?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode" /></a>
-  <a href="https://www.hackerrank.com/profile/jhadeebyanshu"><img src="https://img.shields.io/badge/HackerRank-0D1117?style=for-the-badge&logo=hackerrank&logoColor=00EA64" alt="HackerRank" /></a>
-  <a href="https://codolio.com/profile/deebyanshujha"><img src="https://img.shields.io/badge/Codolio-0D1117?style=for-the-badge&logo=codeforces&logoColor=F2CC60" alt="Codolio" /></a>
-</p>
-
----
-
-<p align="center">
-  <sub>Still learning, still building, and still trying to understand one layer deeper.</sub>
-</p>
+  Nothing here is decoration. Every organelle is a repository.
+-->
