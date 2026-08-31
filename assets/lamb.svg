@@ -1,0 +1,38 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract syntax tree for Lamb, showing an expression parsed into typed tokens with the tree-walking evaluation path highlighted">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+
+  <rect x="0.5" y="0.5" width="479" height="299" rx="10" fill="#ffffff" stroke="#111111" stroke-opacity="0.12"/>
+
+  <g stroke-width="1.3" fill="none">
+    <path d="M240 66 L150 126" stroke="#3B5BDB"/>
+    <path d="M240 66 L330 126" stroke="#111111" stroke-opacity="0.22"/>
+    <path d="M150 126 L100 186" stroke="#3B5BDB"/>
+    <path d="M150 126 L190 186" stroke="#111111" stroke-opacity="0.22"/>
+    <path d="M330 126 L300 186" stroke="#111111" stroke-opacity="0.22"/>
+    <path d="M330 126 L370 186" stroke="#111111" stroke-opacity="0.22"/>
+  </g>
+
+  <circle cx="240" cy="66" r="15" fill="#F5F7FF" stroke="#3B5BDB" stroke-width="1.6"/>
+  <text x="240" y="71" text-anchor="middle" font-size="12" font-weight="700" fill="#3B5BDB">+</text>
+
+  <circle cx="150" cy="126" r="13" fill="#F5F7FF" stroke="#3B5BDB" stroke-width="1.4"/>
+  <text x="150" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#3B5BDB">*</text>
+  <circle cx="330" cy="126" r="13" fill="#ffffff" stroke="#111111" stroke-opacity="0.35" stroke-width="1.3"/>
+  <text x="330" y="130" text-anchor="middle" class="mono" font-size="8.5" fill="#6B7280">CALL</text>
+
+  <g font-size="10" text-anchor="middle">
+    <rect x="78" y="180" width="44" height="20" rx="4" fill="#ffffff" stroke="#111111" stroke-opacity="0.3"/>
+    <text x="100" y="194" class="mono" fill="#6B7280">NUM</text>
+    <rect x="168" y="180" width="44" height="20" rx="4" fill="#ffffff" stroke="#111111" stroke-opacity="0.3"/>
+    <text x="190" y="194" class="mono" fill="#6B7280">IDENT</text>
+    <rect x="278" y="180" width="44" height="20" rx="4" fill="#ffffff" stroke="#111111" stroke-opacity="0.3"/>
+    <text x="300" y="194" class="mono" fill="#6B7280">IDENT</text>
+    <rect x="348" y="180" width="44" height="20" rx="4" fill="#ffffff" stroke="#111111" stroke-opacity="0.3"/>
+    <text x="370" y="194" class="mono" fill="#6B7280">ARGS</text>
+  </g>
+
+  <text x="24" y="256" class="mono" font-size="10" letter-spacing="0.06em" fill="#6B7280">01 / LAMB</text>
+</svg>

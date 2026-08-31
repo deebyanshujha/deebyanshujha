@@ -1,0 +1,7 @@
+<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="status: available">
+  <circle cx="10" cy="10" r="6" fill="none" stroke="#3B5BDB" stroke-opacity="0.35" stroke-width="1">
+    <animate attributeName="r" values="6;9;6" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="10" cy="10" r="3.2" fill="#3B5BDB"/>
+</svg>

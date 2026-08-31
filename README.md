@@ -1,101 +1,193 @@
-<div align="center">
+<table>
+<tr>
+<td width="58%" valign="top">
 
-<a href="./assets/blueprint.svg">
-  <img src="./assets/blueprint.svg" width="100%"
-       alt="THE DEEBYANSHU BLUEPRINT — sheet DJ-0001, a 1400 by 8800 pixel engineering drawing of Deebyanshu Jha as a machine. Fig. 01 is the title block: name, designation 24BCT0213, status BUILDING, version 2026.08, drawn by D. Jha, checked by nobody. Fig. 02 is THE CORE, an octagonal assembly with six subsystems piped to it — BUILDING as a screw press, EXPERIMENTS as a retort, SYSTEMS as a cut-away piston, WEB as a branching distribution network, DSA as a gear train, and AI as a sealed chamber with a readout that never settles. Figs. 04 to 16 are the parts list: each real project drawn as a component bolted to the main shaft — Lamb, docs-lamb, ChatterNet, a WinSock echo server, xv6, my_portfolio, Project Camp, HostelFix, Rapid Recall, a placement predictor, On_Cloud_9, a movie-recommender extension, and 700+ solved problems, each annotated with its stack and status. Fig. 17 is an exploded view of five plates — SYSTEMS, BUILD, EXPERIMENT, SHIP, LEARN — a loop, plate 05 returning to plate 01. Component 07B, roughly two thirds down, is UNIDENTIFIED and marked DO NOT TOUCH. Fig. 18 is the field record: a revision table from first commit to this sheet, over-stamped FIELD TESTED, COMPONENT VALIDATED and 700+. Fig. 19 is FUTURE COMPONENTS, drawn only in dashed construction lines: compilers, distributed systems, and one reserved bay marked with a question mark. Fig. 23 is SIGNAL OUTPUT, a terminal flange with nozzles for GitHub, LinkedIn and email. The sheet ends END OF BLUEPRINT, VERSION 01, with a line running off the bottom edge and the note SHEET 02 NOT YET DRAWN." />
-</a>
+# DEEBYANSHU JHA
 
-<sub>the sheet is 8800px tall · <a href="./assets/blueprint.svg"><b>OPEN IT FULL SIZE&nbsp;&nbsp;→</b></a> · the small print is meant to be read</sub>
+### SOFTWARE ENGINEER — BUILDING FROM SOCKET TO SCREEN.
 
-<br><br>
+I build systems end to end — from low-level networking to interfaces people actually use. Understanding a layer means implementing it, not reading about it.
 
-<sub>
-<b>FIG. 23 — SIGNAL OUTPUT</b><br>
-<a href="https://github.com/deebyanshujha">GITHUB</a> &nbsp;·&nbsp;
-<a href="https://www.linkedin.com/in/deebyanshujha/">LINKEDIN</a> &nbsp;·&nbsp;
-<a href="mailto:jhadeebyanshu@gmail.com">EMAIL</a> &nbsp;·&nbsp;
-<a href="https://leetcode.com/u/deebyanshujha/">LEETCODE</a> &nbsp;·&nbsp;
-<a href="https://www.hackerrank.com/profile/jhadeebyanshu">HACKERRANK</a> &nbsp;·&nbsp;
-<a href="https://codolio.com/profile/deebyanshujha">CODOLIO</a>
-</sub>
+<img src="./assets/status.svg" width="10" height="10" alt=""/> **Shipped [ClassForge](https://classforge-one.vercel.app/)**
 
-</div>
+GitHub · LinkedIn · Email
+<br>[github.com/deebyanshujha](https://github.com/deebyanshujha) &nbsp;·&nbsp; [linkedin.com/in/deebyanshujha](https://www.linkedin.com/in/deebyanshujha/) &nbsp;·&nbsp; [jhadeebyanshu@gmail.com](mailto:jhadeebyanshu@gmail.com)
 
-<br>
+<sub>Vellore, IN &nbsp;·&nbsp; UTC+5:30</sub>
 
-<details>
-<summary><sub><b>▸ &nbsp;PARTS LIST</b> &nbsp;— every component on the sheet, with its repository</sub></summary>
+</td>
+<td width="42%" align="right" valign="top">
 
-<br>
+<img src="./assets/hero.svg" width="100%" alt="System map: a socket connects to a runtime, which connects to an interface"/>
 
-**FIG. 02 — THE CORE** &nbsp;·&nbsp; Deebyanshu Jha &nbsp;·&nbsp; Computer Science student &nbsp;·&nbsp; systems + web + AI &nbsp;·&nbsp; Vellore, TN, IN
-<br>*Curiosity about how things actually work, converted into things that run.*
-
-**BUILDING** &nbsp;— pressure applied downward, on purpose, until a thing exists
-<br>[`Lamb`](https://github.com/deebyanshujha/Lamb) &nbsp; FIG. 04 &nbsp; Java / JVM / tree-walking &nbsp;·&nbsp; **shipped** &nbsp;— lexer, recursive-descent parser, AST, resolver, closures, classes, inheritance
-<br>[`docs-lamb`](https://github.com/deebyanshujha/docs-lamb) &nbsp; FIG. 05 &nbsp; HTML / docs &nbsp;·&nbsp; **live** &nbsp;— nobody can use what they cannot read
-
-**SYSTEMS** &nbsp;— kernels, sockets, memory; the layer under the layer
-<br>[`ChatterNet`](https://github.com/deebyanshujha/ChatterNet) &nbsp; FIG. 06 &nbsp; C++ / sockets / threads &nbsp;·&nbsp; **shipped** &nbsp;— multi-threaded TCP group chat, concurrent clients, live broadcast
-<br>[`WinSock-Echo-Server`](https://github.com/deebyanshujha/WinSock-Echo-Server) &nbsp; FIG. 07 &nbsp; C++ / WinSock &nbsp;·&nbsp; **shipped** &nbsp;— bind, listen, accept, send, recv
-<br>`xv6` &nbsp; FIG. 08 &nbsp; C / UNIX / kernel &nbsp;·&nbsp; **in vivo** &nbsp;— traps, syscalls, processes, scheduler behaviour, read from source
-
-**WEB** &nbsp;— one input, many outputs, no guarantee of ordering
-<br>[`my_portfolio`](https://github.com/deebyanshujha/my_portfolio) &nbsp; FIG. 09 &nbsp; TypeScript / React &nbsp;·&nbsp; **evolving**
-<br>[`Project_camp`](https://github.com/deebyanshujha/Project_camp) &nbsp; FIG. 10 &nbsp; Node / REST / RBAC &nbsp;·&nbsp; **shipped** &nbsp;— projects, tasks, subtasks, notes, role-based access
-<br>[`hostelfix_vitv`](https://github.com/deebyanshujha/hostelfix_vitv) &nbsp; FIG. 11 &nbsp; JavaScript &nbsp;·&nbsp; **shipped** &nbsp;— complaint intake, triage, staff assignment, resolution tracking
-<br>[`rapid-recall`](https://github.com/deebyanshujha/rapid-recall) &nbsp; FIG. 12 &nbsp; JavaScript / DOM &nbsp;·&nbsp; **shipped** &nbsp;— multiplayer category recall with live scoring
-
-**EXPERIMENTS** &nbsp;— unstable by design; roughly half are abandoned
-<br>[`placement_predictor`](https://github.com/deebyanshujha/placement_predictor) &nbsp; FIG. 13 &nbsp; Python / Jupyter / ML &nbsp;·&nbsp; **cultured** &nbsp;— returns a probability, not a verdict
-<br>[`On_Cloud_9`](https://github.com/deebyanshujha/On_Cloud_9) &nbsp; FIG. 14 &nbsp; Python &nbsp;·&nbsp; **mutating** &nbsp;— shape not yet fixed
-<br>[`movie recommender`](https://github.com/deebyanshujha/chrome-extension---movie-recommendation) &nbsp; FIG. 15 &nbsp; JavaScript / OMDB &nbsp;·&nbsp; **shipped**
-
-**DSA** &nbsp;— 700+ meshed teeth; practice, not a streak
-<br>[`neetcode-submissions`](https://github.com/deebyanshujha/neetcode-submissions) &nbsp; FIG. 16 &nbsp; C++ / DSA &nbsp;·&nbsp; **ongoing** &nbsp;— turns one way only
-
-**FIG. 19 — FUTURE COMPONENTS** &nbsp;·&nbsp; *status: under construction*
-<br>`compilers` &nbsp; FIG. 20 &nbsp;·&nbsp; **unformed** &nbsp;— stop walking the tree; emit bytecode and build the machine that runs it
-<br>`distributed systems` &nbsp; FIG. 21 &nbsp;·&nbsp; **unformed** &nbsp;— one server is never the interesting case
-<br>`FIG. 22` &nbsp;·&nbsp; **reserved** &nbsp;— ?
-
-**MATERIALS** &nbsp;<sub>`Java` `C` `C++` `JavaScript` `TypeScript` `Python` `React` `Node` `Linux` `Git` `sockets` `parsers` `AST` `DSA` `AI/ML` `APIs` `architecture` `networks`</sub>
-
-</details>
-
-<details>
-<summary><sub>▸ &nbsp;HOW THE SHEET IS DRAWN</sub></summary>
-
-<br>
-
-<sub>The blueprint is generated, not hand-authored: <a href="./tools/generate-blueprint.mjs"><code>tools/generate-blueprint.mjs</code></a> reads the real project data in <a href="./data/organism.json"><code>data/organism.json</code></a> and emits <a href="./assets/blueprint.svg"><code>assets/blueprint.svg</code></a> — 1400 × 8800, one file, no external assets, no scripts. Run <code>node tools/generate-blueprint.mjs</code> to redraw it.</sub>
+</td>
+</tr>
+</table>
 
 <br><br>
 
-<sub>Animation is CSS and SMIL inside the SVG, so it survives GitHub's image proxy: the shaft carries signal packets, three gear trains turn, two status lamps blink, and the feedback path in Fig. 17 runs a pulse from plate 05 back into plate 01. Links inside an SVG are not clickable on GitHub — that is why Fig. 23 is repeated as real links above.</sub>
+<img src="./assets/status.svg" width="8" height="8" alt=""/> <sub>UML CLASS DIAGRAM EDITOR</sub>
+
+# Design UML diagrams.<br>Think in systems.
+
+<table>
+<tr>
+<td width="62%" valign="top">
+
+ClassForge treats the diagram as a language instead of a picture of one — native notation, relationships that understand what they connect, and a canvas with nothing else competing for attention.
+
+<sub>NODES &nbsp;|&nbsp; EDGES &nbsp;|&nbsp; RELATIONSHIPS &nbsp;|&nbsp; VALIDATION &nbsp;|&nbsp; EXPORT</sub>
+
+</td>
+<td width="38%" align="right" valign="top">
+
+<sub>[Open editor →](https://classforge-one.vercel.app/)</sub>
+
+</td>
+</tr>
+</table>
+
+<img src="./assets/classforge.svg" width="100%" alt="ClassForge editor canvas showing three UML classes — Node, Edge, Graph — connected by inheritance and composition, with Edge selected"/>
 
 <br><br>
 
-<sub>The previous sheet — the same information grown as a <a href="./assets/organism.svg">living organism</a>, with a <a href="https://deebyanshujha.github.io/deebyanshujha/interactive/">live interactive culture</a> — is kept as revision 07.</sub>
+## Selected work
 
-</details>
+<table>
+<tr>
+<td width="58%" valign="top">
 
-<div align="center">
+<sub>01 / LAMB</sub>
+
+### Lamb
+Tree-walking interpreter for the JVM. Lexer, recursive-descent parser, AST, resolver, closures, classes, inheritance — the fastest way to understand language design turned out to be implementing one.
+
+<sub>JAVA &nbsp;|&nbsp; JVM &nbsp;|&nbsp; INTERPRETER</sub> &nbsp;·&nbsp; [source →](https://github.com/deebyanshujha/Lamb)
+
+</td>
+<td width="42%" valign="top">
+
+<img src="./assets/lamb.svg" width="100%" alt="Abstract syntax tree for Lamb with the tree-walking evaluation path highlighted"/>
+
+</td>
+</tr>
+</table>
+
 <br>
-<sub><sup>END OF BLUEPRINT &nbsp;·&nbsp; VERSION 01 &nbsp;·&nbsp; SHEET DJ-0001 &nbsp;·&nbsp; REV 08 &nbsp;·&nbsp; SHEET 02 NOT YET DRAWN</sup></sub>
-</div>
 
-<!--
-  You opened the source. That is the correct instinct, and the sheet
-  expects it.
+<img src="./assets/chatternet.svg" width="100%" alt="Network topology for ChatterNet: a server broadcasting to connected clients"/>
 
-    Component 07B is not documented anywhere in this repository.
-    It appears in every revision, including the ones drawn before
-    it was added. Removal was attempted twice.
+<sub>02 / CHATTERNET</sub>
 
-    Open assets/blueprint.svg on its own and zoom in. The small print
-    is real print. DETAIL Z enlarges nothing useful.
+### ChatterNet
+Multi-threaded TCP group chat server. Concurrent clients, one thread per connection, live broadcast to the room — no framework between the code and the wire.
 
-  Nothing on the sheet is decoration. Every numbered figure is a
-  repository, and every status is the actual status.
--->
+<sub>C++ &nbsp;|&nbsp; TCP &nbsp;|&nbsp; SYSTEMS</sub> &nbsp;·&nbsp; [source →](https://github.com/deebyanshujha/ChatterNet)
+
+<br><br>
+
+<table>
+<tr>
+<td width="42%" valign="top">
+
+<img src="./assets/project-camp.svg" width="100%" alt="Layered backend architecture for Project Camp: API, access control, service, and data layers"/>
+
+</td>
+<td width="58%" valign="top">
+
+<sub>03 / PROJECT CAMP</sub>
+
+### Project Camp
+Project-management backend with role-based access control. Projects, tasks, subtasks, notes — a permission model designed the way a real product needs, not a tutorial's.
+
+<sub>NODE &nbsp;|&nbsp; REST &nbsp;|&nbsp; RBAC</sub> &nbsp;·&nbsp; [source →](https://github.com/deebyanshujha/Project_camp)
+
+</td>
+</tr>
+</table>
+
+<br>
+
+**Portfolio** — the site this profile links back to. <sub>REACT &nbsp;|&nbsp; TYPESCRIPT</sub> &nbsp;·&nbsp; [deebyanshujha.github.io/my_portfolio →](https://deebyanshujha.github.io/my_portfolio/)
+
+<br><br>
+
+<img src="./assets/lab.svg" width="100%" height="20" alt=""/>
+
+## The lab
+<sub>interaction &nbsp;·&nbsp; developer tooling &nbsp;·&nbsp; visual systems &nbsp;·&nbsp; interface experiments</sub>
+
+**xv6 internals** — tracing syscalls, traps, and scheduler behaviour through a real kernel, source first.
+<br>**Rapid Recall** — a turn-based multiplayer word game; an excuse to think about live-state UI and timing.
+<br>**Placement Predictor** — a small supervised model over placement outcomes, returning a probability, not a verdict.
+<br>**Movie Recommender** — a Chrome extension surfacing one film per popup, pulled from OMDB.
+
+<br><br>
+
+## How I build
+
+<sub>01</sub>
+
+### REDUCE BEFORE ADDING.
+
+<sub>02</sub>
+
+### MAKE COMPLEXITY OBVIOUS.
+
+<sub>03</sub>
+
+### BUILD FROM FIRST PRINCIPLES.
+
+<sub>04</sub>
+
+### LET THE INTERFACE EXPLAIN ITSELF.
+
+<br>
+
+## Stack
+
+<table>
+<tr>
+<td valign="top">
+
+**FRONTEND**
+<br><sub>React &nbsp;|&nbsp; TypeScript</sub>
+
+</td>
+<td valign="top">
+
+**BACKEND**
+<br><sub>Node &nbsp;|&nbsp; Java</sub>
+
+</td>
+<td valign="top">
+
+**SYSTEMS**
+<br><sub>C++ &nbsp;|&nbsp; JVM &nbsp;|&nbsp; TCP</sub>
+
+</td>
+<td valign="top">
+
+**TOOLS**
+<br><sub>Git &nbsp;|&nbsp; Linux</sub>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<sub>Contribution activity</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&bg_color=0d1117&color=8a8a86&line=6E8FF0&point=6E8FF0&area=true&area_color=6E8FF0&hide_border=true&title_color=8a8a86&custom_title=" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=deebyanshujha&bg_color=ffffff&color=6B7280&line=3B5BDB&point=3B5BDB&area=true&area_color=3B5BDB&hide_border=true&title_color=6B7280&custom_title=" width="100%" alt="contribution activity graph" />
+</picture>
+
+<br><br>
+
+**DEEBYANSHU JHA**
+<br>BUILDING THINGS WORTH USING.
+
+GitHub · LinkedIn · Email
+<br><sub>[github.com/deebyanshujha](https://github.com/deebyanshujha) &nbsp;·&nbsp; [linkedin.com/in/deebyanshujha](https://www.linkedin.com/in/deebyanshujha/) &nbsp;·&nbsp; [jhadeebyanshu@gmail.com](mailto:jhadeebyanshu@gmail.com)</sub>

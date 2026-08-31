@@ -1,0 +1,44 @@
+<svg viewBox="0 0 460 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System map: a socket connects to a runtime, which connects to an interface — the path from network to screen, drawn as a technical diagram on a light grid">
+  <defs>
+    <pattern id="g" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#111111" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <style> text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; } .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; } </style>
+
+  <rect x="0.5" y="0.5" width="459" height="519" rx="12" fill="#ffffff" stroke="#111111" stroke-opacity="0.12"/>
+  <rect x="20" y="20" width="420" height="480" fill="url(#g)"/>
+
+  <path d="M96 420 L96 340 L180 340" stroke="#111111" stroke-opacity="0.25" stroke-width="1.3" fill="none"/>
+  <path d="M180 340 L180 220 L300 220" stroke="#3B5BDB" stroke-width="1.6" fill="none"/>
+  <path d="M300 220 L300 130" stroke="#3B5BDB" stroke-width="1.6" fill="none"/>
+
+  <g>
+    <rect x="56" y="392" width="80" height="56" rx="6" fill="#ffffff" stroke="#111111" stroke-opacity="0.35" stroke-width="1.2"/>
+    <text x="68" y="414" font-size="10.5" font-weight="700" fill="#111111">SOCKET</text>
+    <line x1="56" y1="420" x2="136" y2="420" stroke="#111111" stroke-opacity="0.15"/>
+    <text x="68" y="436" class="mono" font-size="9" fill="#6B7280">tcp · bind</text>
+  </g>
+
+  <g>
+    <rect x="140" y="312" width="90" height="56" rx="6" fill="#ffffff" stroke="#111111" stroke-opacity="0.35" stroke-width="1.2"/>
+    <text x="152" y="334" font-size="10.5" font-weight="700" fill="#111111">RUNTIME</text>
+    <line x1="140" y1="340" x2="230" y2="340" stroke="#111111" stroke-opacity="0.15"/>
+    <text x="152" y="356" class="mono" font-size="9" fill="#6B7280">threads</text>
+  </g>
+
+  <g>
+    <rect x="260" y="192" width="96" height="56" rx="6" fill="#ffffff" stroke="#3B5BDB" stroke-width="1.4"/>
+    <text x="272" y="214" font-size="10.5" font-weight="700" fill="#111111">INTERFACE</text>
+    <line x1="260" y1="220" x2="356" y2="220" stroke="#111111" stroke-opacity="0.15"/>
+    <text x="272" y="236" class="mono" font-size="9" fill="#6B7280">render</text>
+  </g>
+
+  <circle cx="300" cy="130" r="4" fill="#3B5BDB"/>
+  <circle cx="300" cy="130" r="8" fill="none" stroke="#3B5BDB" stroke-opacity="0.3"/>
+
+  <g class="mono">
+    <circle cx="24" cy="486" r="3" fill="#3B5BDB"/>
+    <text x="34" y="490" font-size="10" letter-spacing="0.08em" fill="#6B7280">SYSTEM MAP</text>
+  </g>
+</svg>

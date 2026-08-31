@@ -1,0 +1,10 @@
+<svg viewBox="0 0 1000 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <style>
+    .line { stroke: #111111; stroke-opacity: 0.14; }
+    @media (prefers-color-scheme: dark) {
+      .line { stroke: #f5f5f5; stroke-opacity: 0.18; }
+    }
+  </style>
+  <line x1="8" y1="20" x2="1000" y2="20" class="line" stroke-width="1"/>
+  <circle cx="8" cy="20" r="3" fill="#3B5BDB"/>
+</svg>
