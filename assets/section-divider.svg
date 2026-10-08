@@ -1,0 +1,17 @@
+<svg viewBox="0 0 1200 18" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="section divider">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1200" y1="0" y2="0">
+      <stop offset="0" stop-color="#7FE9E0" stop-opacity="0.72"/>
+      <stop offset="0.22" stop-color="#7FE9E0" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#7FE9E0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <style>
+    .dot{animation:run 5.6s ease-in-out infinite}
+    @keyframes run{0%,100%{transform:translateX(0);opacity:.45}50%{transform:translateX(260px);opacity:1}}
+  </style>
+  <path d="M34 9H1180" stroke="url(#g)" stroke-width="1"/>
+  <circle cx="12" cy="9" r="4" fill="#7FE9E0"/>
+  <circle class="dot" cx="34" cy="9" r="3" fill="#EAFBFF" filter="url(#glow)"/>
+</svg>

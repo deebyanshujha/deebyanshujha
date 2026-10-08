@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CODE to BUILD to TEST to SHIP animated engineering pipeline">
+  <defs>
+    <linearGradient id="line" x1="120" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FE9E0" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#B9A7FF" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#7EE787" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .packet{animation:travel 5.8s linear infinite}
+    .packet2{animation:travel 5.8s linear infinite;animation-delay:-2.9s}
+    .blink{animation:blink 2.2s ease-in-out infinite}
+    @keyframes travel{0%{offset-distance:0%;opacity:0}8%{opacity:1}92%{opacity:1}100%{offset-distance:100%;opacity:0}}
+    @keyframes blink{0%,100%{opacity:.38}50%{opacity:.95}}
+  </style>
+  <rect width="1200" height="120" rx="18" fill="#05070B" fill-opacity="0"/>
+  <path id="track" d="M130 60H1070" stroke="url(#line)" stroke-width="2.5" fill="none"/>
+  <path d="M130 60H1070" stroke="#7FE9E0" stroke-opacity="0.09" stroke-dasharray="3 16" stroke-width="8" fill="none"/>
+
+  <g class="mono" font-size="18" font-weight="700" letter-spacing="3">
+    <g>
+      <circle cx="130" cy="60" r="8" fill="#7FE9E0" class="blink"/>
+      <text x="130" y="34" fill="#EAFBFF" text-anchor="middle">CODE</text>
+    </g>
+    <g>
+      <circle cx="443" cy="60" r="8" fill="#79E7FF" class="blink"/>
+      <text x="443" y="34" fill="#EAFBFF" text-anchor="middle">BUILD</text>
+    </g>
+    <g>
+      <circle cx="757" cy="60" r="8" fill="#B9A7FF" class="blink"/>
+      <text x="757" y="34" fill="#EAFBFF" text-anchor="middle">TEST</text>
+    </g>
+    <g>
+      <circle cx="1070" cy="60" r="8" fill="#7EE787" class="blink"/>
+      <text x="1070" y="34" fill="#EAFBFF" text-anchor="middle">SHIP</text>
+    </g>
+  </g>
+
+  <circle r="7" fill="#EAFBFF" filter="url(#blur)" class="packet" style="offset-path:path('M130 60H1070')"/>
+  <circle r="4" fill="#7FE9E0" class="packet" style="offset-path:path('M130 60H1070')"/>
+  <circle r="5" fill="#B9A7FF" filter="url(#blur)" class="packet2" style="offset-path:path('M130 60H1070')"/>
+  <circle r="3" fill="#EAFBFF" class="packet2" style="offset-path:path('M130 60H1070')"/>
+</svg>

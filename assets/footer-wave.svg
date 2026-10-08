@@ -1,0 +1,24 @@
+<svg viewBox="0 0 1200 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="animated signal divider">
+  <defs>
+    <linearGradient id="signal" x1="80" y1="0" x2="1120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FE9E0" stop-opacity="0.08"/>
+      <stop offset="0.35" stop-color="#7FE9E0" stop-opacity="0.8"/>
+      <stop offset="0.62" stop-color="#B9A7FF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#7EE787" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <style>
+    .dash{stroke-dasharray:70 22;animation:flow 7s linear infinite}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    @keyframes flow{to{stroke-dashoffset:-184}}
+    @keyframes pulse{0%,100%{opacity:.28}50%{opacity:.9}}
+  </style>
+  <path d="M80 35H270c34 0 34-18 68-18s34 36 68 36 34-18 68-18h252c34 0 34-18 68-18s34 36 68 36 34-18 68-18h190" fill="none" stroke="#7FE9E0" stroke-opacity="0.12" stroke-width="2"/>
+  <path class="dash" d="M80 35H270c34 0 34-18 68-18s34 36 68 36 34-18 68-18h252c34 0 34-18 68-18s34 36 68 36 34-18 68-18h190" fill="none" stroke="url(#signal)" stroke-width="2.4" stroke-linecap="round"/>
+  <path class="dash" d="M80 35H270c34 0 34-18 68-18s34 36 68 36 34-18 68-18h252c34 0 34-18 68-18s34 36 68 36 34-18 68-18h190" fill="none" stroke="#EAFBFF" stroke-opacity="0.22" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+  <circle class="pulse" cx="80" cy="35" r="4" fill="#7FE9E0"/>
+  <circle class="pulse" cx="1120" cy="35" r="4" fill="#7EE787"/>
+</svg>
