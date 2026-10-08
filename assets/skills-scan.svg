@@ -1,8 +1,0 @@
-<svg viewBox="0 0 1200 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="technology scan line">
-  <defs><filter id="b"><feGaussianBlur stdDeviation="3"/></filter></defs>
-  <style>.scan{animation:scan 6s ease-in-out infinite}@keyframes scan{0%,100%{transform:translateX(0);opacity:.18}50%{transform:translateX(1040px);opacity:1}}</style>
-  <path d="M40 14H1160" stroke="#7FE9E0" stroke-opacity=".12"/>
-  <rect class="scan" x="40" y="10" width="120" height="8" rx="4" fill="#7FE9E0" opacity=".6" filter="url(#b)"/>
-  <circle cx="40" cy="14" r="3" fill="#7FE9E0"/>
-  <circle cx="1160" cy="14" r="3" fill="#7EE787"/>
-</svg>

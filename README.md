@@ -32,259 +32,142 @@
 
 <br><br>
 
-<img src="./assets/status.svg" width="8" height="8" alt=""/> <sub>01 / PROJECTS</sub>
-<br>
-<img src="./assets/section-divider.svg" width="100%" height="18" alt="section divider"/>
+<sub>01 / ABOUT</sub>
 
-<table>
+---
+
+I'm a third-year Computer Science student at VIT Vellore, pursuing a B.Tech in CSE with Internet of Things and holding a 9.12/10 CGPA. I like understanding how software works under the hood and then building it myself. Most of my projects end up somewhere between software engineering, systems, backend engineering, networking, developer tools, desktop applications, and interpreters, with 700+ DSA problems along the way.
+
+<sub>SYSTEMS · BACKEND · NETWORKING · DESKTOP · LANGUAGE TOOLS</sub>
+
+<br>
+
+<sub>02 / PROJECTS</sub>
+
+---
+
+<table width="100%">
 <tr>
 <td width="50%" valign="top">
-
 <sub>01</sub>
-<br>
-<img src="./assets/project-lamb.svg" width="100%" height="72" alt="source to AST to resolve to execute"/>
-
-### 🐑 Lamb
-<sub><b>INTERPRETER</b> · LANGUAGE RUNTIME</sub>
-
-Dynamically typed language on the JVM with lexing, parsing, ASTs, resolving, closures, classes, inheritance, and tree-walking evaluation.
-
-<img src="https://skillicons.dev/icons?i=java&theme=dark" height="28" alt="Java" /> &nbsp; <sub>AST · PARSING · OOP</sub>
-
-<sub>[VIEW REPOSITORY →](https://github.com/deebyanshujha/Lamb) &nbsp;·&nbsp; [DOCS →](https://deebyanshujha.github.io/docs-lamb/)</sub>
-
+<h3>🐑 LAMB</h3>
+<sub>TREE-WALK INTERPRETER · LANGUAGE RUNTIME</sub>
+<p><code>SCAN → PARSE → AST → RESOLVE → RUN</code></p>
+<p>A dynamically typed language built on the JVM in Java, with lexing, parsing, ASTs, resolution, closures, classes, inheritance, and tree-walking evaluation.</p>
+<sub>JAVA · AST · PARSING · INTERPRETER</sub>
+<p><sub><a href="https://github.com/deebyanshujha/Lamb">VIEW REPOSITORY →</a> &nbsp; <a href="https://deebyanshujha.github.io/docs-lamb/">DOCS →</a></sub></p>
 </td>
 <td width="50%" valign="top">
-
 <sub>02</sub>
-<br>
-<img src="./assets/project-quickdock.svg" width="100%" height="72" alt="QuickDock search terminal"/>
-
-### ⌘ QuickDock
-<sub><b>LAUNCHER</b> · LOCAL-FIRST DESKTOP TOOL</sub>
-
-Keyboard-first Windows launcher for apps, files, and folders, built around local indexing, global hotkeys, shell actions, and fast navigation.
-
-<img src="https://skillicons.dev/icons?i=rust,tauri,react&theme=dark" height="28" alt="Rust, Tauri, React" /> &nbsp; <sub>WIN32 · SEARCH</sub>
-
-<sub>[VIEW REPOSITORY →](https://github.com/deebyanshujha/QuickDock)</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<sub>03</sub>
-<br>
-<img src="./assets/project-wallflow.svg" width="100%" height="72" alt="WallFlow animated wallpaper line"/>
-
-### ◧ WallFlow
-<sub><b>DESKTOP</b> · WALLPAPER FLOW</sub>
-
-Windows wallpaper manager with scheduled refreshes, smart caching, offline fallback, favorites, and bandwidth-conscious image downloads.
-
-<img src="https://skillicons.dev/icons?i=rust,tauri,sqlite&theme=dark" height="28" alt="Rust, Tauri, SQLite" /> &nbsp; <sub>WINDOWS · CACHING</sub>
-
-<sub>[VIEW REPOSITORY →](https://github.com/deebyanshujha/WallFlow)</sub>
-
-</td>
-<td width="50%" valign="top">
-
-<sub>04</sub>
-<br>
-<img src="./assets/project-chatternet.svg" width="100%" height="72" alt="ChatterNet TCP graph"/>
-
-### ∿ ChatterNet
-<sub><b>NETWORKING</b> · CONCURRENT TCP</sub>
-
-Multi-threaded TCP group chat in C++ with client-server architecture, concurrent users, and real-time message broadcasting.
-
-<img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="28" alt="C++" /> &nbsp; <sub>SOCKETS · THREADS · TCP</sub>
-
-<sub>[VIEW REPOSITORY →](https://github.com/deebyanshujha/ChatterNet)</sub>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<img src="./assets/status.svg" width="8" height="8" alt=""/> <sub>02 / TECHNOLOGY</sub>
-<br>
-<img src="./assets/section-divider.svg" width="100%" height="18" alt="section divider"/>
-<img src="./assets/skills-scan.svg" width="100%" height="28" alt="technology scan line"/>
-
-<table>
-<tr>
-<td width="25%" valign="top">
-
-**Languages**
-<br><br>
-<img src="https://skillicons.dev/icons?i=cpp,java,c,js,py,bash,rust&theme=dark&perline=4" alt="C++, Java, C, JavaScript, Python, Bash, Rust" />
-
-</td>
-<td width="25%" valign="top">
-
-**Frontend**
-<br><br>
-<img src="https://skillicons.dev/icons?i=react,html,css,tailwind&theme=dark&perline=4" alt="React, HTML, CSS, Tailwind" />
-
-</td>
-<td width="25%" valign="top">
-
-**Backend & Data**
-<br><br>
-<img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,sqlite&theme=dark&perline=3" alt="Node.js, Express, MySQL, MongoDB, SQLite" />
-
-</td>
-<td width="25%" valign="top">
-
-**Systems & Tools**
-<br><br>
-<img src="https://skillicons.dev/icons?i=linux,git,github,postman,vscode,tauri,powershell&theme=dark&perline=4" alt="Linux, Git, GitHub, Postman, VS Code, Tauri, PowerShell" />
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<img src="./assets/focus-strip.svg" width="100%" height="64" alt="systems networking backend desktop language tools"/>
-
-<br><br>
-
-<img src="./assets/status.svg" width="8" height="8" alt=""/> <sub>03 / PROBLEM SOLVING</sub>
-<br>
-<img src="./assets/section-divider.svg" width="100%" height="18" alt="section divider"/>
-
-<table>
-<tr>
-<td align="center" width="25%">
-
-## 700+
-<br><sub>DSA PROBLEMS</sub>
-
-</td>
-<td align="center" width="25%">
-
-## TOP 25%
-<br><sub>[LEETCODE](https://leetcode.com/deebyanshujha/)</sub>
-
-</td>
-<td align="center" width="25%">
-
-## 2★
-<br><sub>[CODECHEF](https://www.codechef.com/users/deebyanshujha)</sub>
-
-</td>
-<td align="center" width="25%">
-
-## 6+
-<br><sub>CERTIFICATIONS / BADGES</sub>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<img src="./assets/status.svg" width="8" height="8" alt=""/> <sub>04 / EDUCATION</sub>
-<br>
-<img src="./assets/section-divider.svg" width="100%" height="18" alt="section divider"/>
-
-<table>
-<tr>
-<td width="34%" valign="top">
-
-### VIT Vellore
-<sub>B.TECH — CSE (IOT)</sub>
-<br><sub>2024 — 2028</sub>
-
-</td>
-<td width="22%" align="center" valign="top">
-
-## 9.12 / 10
-<sub>CGPA</sub>
-
-</td>
-<td width="22%" align="center" valign="top">
-
-## 91.8%
-<sub>XII</sub>
-
-</td>
-<td width="22%" align="center" valign="top">
-
-## 89.8%
-<sub>X</sub>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<img src="./assets/status.svg" width="8" height="8" alt=""/> <sub>05 / CURRENTLY BUILDING</sub>
-<br>
-<img src="./assets/section-divider.svg" width="100%" height="18" alt="section divider"/>
-
-<table>
-<tr>
-<td width="36%" valign="top">
-
-### ⚡ QUICKDOCK
+<h3>⚡ QUICKDOCK</h3>
 <sub>KEYBOARD-FIRST WINDOWS LAUNCHER</sub>
-
-<br><br>
-<img src="./assets/terminal-quickdock.svg" width="100%" height="64" alt="building QuickDock terminal"/>
-
+<p><code>SEARCH · INDEX · LAUNCH</code></p>
+<p>A keyboard-first launcher for Windows apps, files, and folders, focused on fast local indexing, ranking, global hotkeys, and shell integration.</p>
+<sub>RUST · TAURI · REACT · WINDOWS</sub>
+<p><sub><a href="https://github.com/deebyanshujha/QuickDock">VIEW REPOSITORY →</a></sub></p>
 </td>
-<td width="64%" valign="top">
-
-Building a local-first launcher for apps, files, folders, and fast system navigation.
-
-<sub>RUST · TAURI · REACT · WINDOWS · LOCAL INDEX</sub>
-
+</tr>
+<tr>
+<td width="50%" valign="top">
+<sub>03</sub>
+<h3>◧ WALLFLOW</h3>
+<sub>WINDOWS WALLPAPER UTILITY</sub>
+<p><code>CACHE · SCHEDULE · APPLY</code></p>
+<p>A lightweight Windows wallpaper manager with scheduled refreshes, smart caching, offline fallback, favorites, and bandwidth-conscious downloads.</p>
+<sub>RUST · TAURI · SQLITE · WINDOWS</sub>
+<p><sub><a href="https://github.com/deebyanshujha/WallFlow">VIEW REPOSITORY →</a></sub></p>
+</td>
+<td width="50%" valign="top">
+<sub>04</sub>
+<h3>∿ CHATTERNET</h3>
+<sub>CONCURRENT TCP CHAT</sub>
+<p><code>CONNECT · ROUTE · BROADCAST</code></p>
+<p>A multi-threaded TCP group chat system in C++ with client-server architecture, concurrent users, and real-time room broadcasting.</p>
+<sub>C++ · SOCKETS · TCP/IP · THREADS</sub>
+<p><sub><a href="https://github.com/deebyanshujha/ChatterNet">VIEW REPOSITORY →</a></sub></p>
 </td>
 </tr>
 </table>
 
-<br><br>
+<br>
 
-<img src="./assets/build-pipeline.svg" width="100%" height="86" alt="IDEA to BUILD to TEST to DEBUG to SHIP"/>
+<sub>03 / TECHNOLOGY</sub>
 
-<br><br>
+---
 
-<div align="center">
-
-<img src="./assets/footer-wave.svg" width="100%" height="70" alt="animated signal divider" />
+<table width="100%">
+<tr>
+<td width="25%" valign="top">
+<sub>LANGUAGES</sub>
+<p><img src="https://skillicons.dev/icons?i=cpp,java,c,js,py,bash,rust&theme=dark&perline=4" alt="C++, Java, C, JavaScript, Python, Bash, Rust" /></p>
+</td>
+<td width="25%" valign="top">
+<sub>FRONTEND</sub>
+<p><img src="https://skillicons.dev/icons?i=react,html,css&theme=dark&perline=4" alt="React, HTML, CSS" /></p>
+</td>
+<td width="25%" valign="top">
+<sub>BACKEND &amp; DATA</sub>
+<p><img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,sqlite&theme=dark&perline=3" alt="Node.js, Express, MySQL, MongoDB, SQLite" /></p>
+</td>
+<td width="25%" valign="top">
+<sub>SYSTEMS &amp; TOOLS</sub>
+<p><img src="https://skillicons.dev/icons?i=linux,git,github,postman,vscode,tauri,powershell&theme=dark&perline=4" alt="Linux, Git, GitHub, Postman, VS Code, Tauri, PowerShell" /></p>
+</td>
+</tr>
+</table>
 
 <br>
 
-<b>BUILD. UNDERSTAND. SHIP.</b>
+<sub>04 / PROBLEM SOLVING</sub>
+
+---
+
+<table width="100%">
+<tr>
+<td width="25%" align="center" valign="top"><h2>700+</h2><sub>DSA PROBLEMS</sub></td>
+<td width="25%" align="center" valign="top" style="border-left: 1px solid #30363d;"><h2>TOP 25%</h2><sub><a href="https://leetcode.com/deebyanshujha/">LEETCODE</a></sub></td>
+<td width="25%" align="center" valign="top" style="border-left: 1px solid #30363d;"><h2>2★</h2><sub><a href="https://www.codechef.com/users/deebyanshujha">CODECHEF</a></sub></td>
+<td width="25%" align="center" valign="top" style="border-left: 1px solid #30363d;"><h2>6+</h2><sub>BADGES</sub></td>
+</tr>
+</table>
 
 <br>
 
-<sub>Always curious about what happens under the hood.</sub>
+<sub>05 / NOW</sub>
 
-<br><br>
+---
 
+<table width="100%">
+<tr>
+<td width="38%" valign="top">
+<sub>NOW BUILDING</sub>
+<h3>⚡ QUICKDOCK</h3>
+<sub>KEYBOARD-FIRST WINDOWS LAUNCHER</sub>
+<p><img src="./assets/terminal-quickdock.svg" width="240" height="24" alt="$ quickdock --index with a blinking cursor" /></p>
+</td>
+<td width="62%" valign="top">
+Building a local-first launcher for apps, files, folders, and fast keyboard-driven system navigation.
+<p><sub>SEARCH · INDEX · LAUNCH</sub></p>
+<sub>RUST · TAURI · REACT · WINDOWS</sub>
+<p><sub>● IN PROGRESS</sub></p>
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="left">
+<hr>
+<h2>BUILD. UNDERSTAND. SHIP.</h2>
+<p>I like figuring out how things work,<br>then building them from scratch.</p>
 <sub>
-  <a href="https://github.com/deebyanshujha">GitHub</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/deebyanshujha/">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="https://my-portfolio-five-beta-27.vercel.app">Portfolio</a>
-  &nbsp;·&nbsp;
+  <a href="https://github.com/deebyanshujha">GitHub</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/deebyanshujha/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://my-portfolio-five-beta-27.vercel.app">Portfolio</a> &nbsp;·&nbsp;
   <a href="https://leetcode.com/deebyanshujha/">LeetCode</a>
 </sub>
-
-<br>
-
-<img src="./assets/footer-terminal.svg" width="70%" height="58" alt="end of profile terminal" />
-
-<br>
-
-<sub>© DEEBYANSHU JHA</sub>
-
+<table width="100%">
+<tr><td align="left"><sub>DEEBYANSHU JHA</sub></td><td align="right"><sub>2026</sub></td></tr>
+</table>
+<hr>
 </div>
